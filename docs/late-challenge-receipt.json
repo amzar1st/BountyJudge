@@ -1,0 +1,45 @@
+{
+  "hash": "0xed7d2159f7babcd0aaa9eea70bf3086003423bc6cbf817c0a09e3a567c897cae",
+  "status": 7,
+  "executions": [
+    {
+      "mode": "leader",
+      "vote": null,
+      "execution_result": "ERROR",
+      "genvm_result": {
+        "stderr": "",
+        "stdout": "",
+        "raw_error": null,
+        "error_code": null,
+        "error_description": null
+      },
+      "result": {
+        "status": "rollback",
+        "payload": "Challenge unavailable"
+      }
+    },
+    {
+      "mode": "validator",
+      "vote": "agree",
+      "execution_result": "ERROR",
+      "genvm_result": {
+        "stderr": "",
+        "stdout": "",
+        "raw_error": null,
+        "error_code": null,
+        "error_description": null
+      },
+      "result": {
+        "status": "rollback",
+        "payload": "Challenge unavailable"
+      }
+    }
+  ],
+  "votes": {
+    "0x0B50B270Eba5D9B780272C4Cf4720260177e761D": "agree",
+    "0x17ac0CaefB18205c737e64ee582c9245A28ca1f9": "agree",
+    "0x2FcBC452425f2F1e102c5c04b4331fcB46ee1c00": "agree",
+    "0x40533175AfBbAee2c030F88259Afb5aEDbCF0E05": "agree",
+    "0x6a4179A851B3747A458baD2f089AB2EeFE0eBbAb": "agree"
+  }
+}

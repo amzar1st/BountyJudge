@@ -4,6 +4,8 @@
 
 A GenLayer DApp that evaluates small public GitHub pull requests against immutable bounty requirements. Native test GEN is escrowed when a bounty is created. Independent AI validators retrieve evidence, assess each requirement, compare fingerprints and outcomes, and record APPROVED, REJECTED, or NEEDS_REVIEW.
 
+**Verification:** 40 local tests and five live bounty traces, including independently observed native payouts/refunds. See [the full verification record](docs/verification.md) for receipts and the outstanding browser-wallet checks.
+
 **Development demo. Not audited. Studio GEN is simulated, not money. Browser wallet and live workflow verification status is recorded in `docs/verification.md`.**
 
 ## Run

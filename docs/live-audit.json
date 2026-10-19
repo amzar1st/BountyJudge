@@ -1,0 +1,61 @@
+{
+  "contract": "0x46987EFCfe8bC16202D77164E6b6cF618894Aabf",
+  "network": "Studionet (simulated GEN)",
+  "sourceSha256": "00d68667c325b158397e1a625c5859072511e0151a6d4a8f33a23b0e31fabf5d",
+  "successfulFinalizedTransactions": 28,
+  "rejectedTransactions": [
+    {
+      "label": "bj-approval-01:challenge",
+      "hash": "0xed7d2159f7babcd0aaa9eea70bf3086003423bc6cbf817c0a09e3a567c897cae",
+      "reason": "Challenge unavailable"
+    }
+  ],
+  "cases": [
+    {
+      "id": "bj-dispute-01",
+      "verdict": "APPROVED",
+      "state": "PAYOUT_REQUESTED",
+      "testGen": "0.01",
+      "recipientCreditVerified": true,
+      "contractDebitVerified": true
+    },
+    {
+      "id": "bj-approval-01",
+      "verdict": "NEEDS_REVIEW",
+      "state": "REFUND_REQUESTED",
+      "testGen": "0.01",
+      "recipientCreditVerified": true,
+      "contractDebitVerified": true
+    },
+    {
+      "id": "bj-rejection-01",
+      "verdict": "REJECTED",
+      "state": "REFUND_REQUESTED",
+      "testGen": "0.01",
+      "recipientCreditVerified": true,
+      "contractDebitVerified": true
+    },
+    {
+      "id": "bj-unknown-01",
+      "verdict": "NEEDS_REVIEW",
+      "state": "REFUND_REQUESTED",
+      "testGen": "0.01",
+      "recipientCreditVerified": true,
+      "contractDebitVerified": true
+    },
+    {
+      "id": "bj-direct-approval-02",
+      "verdict": "APPROVED",
+      "state": "PAYOUT_REQUESTED",
+      "testGen": "0.01",
+      "recipientCreditVerified": true,
+      "contractDebitVerified": true
+    }
+  ],
+  "totalFundedTestGen": "0.05",
+  "paidTestGen": "0.02",
+  "refundedTestGen": "0.03",
+  "finalContractBalanceWei": "0",
+  "browserWalletVerified": false,
+  "checkedAt": "2026-10-19T08:55:43.029Z"
+}

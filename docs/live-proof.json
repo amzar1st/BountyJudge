@@ -1578,6 +1578,181 @@
         }
       },
       "success": true
+    },
+    {
+      "label": "bj-direct-approval-02:finalize",
+      "hash": "0xb5ead3eadfce0c39903474d6168c260fcaca0e130334b1dcce85049a95954166",
+      "method": "finalize",
+      "args": [
+        "bj-direct-approval-02"
+      ],
+      "signer": "0xC9b5C46F2AD9021496e5E389958b810d72dB8Bd1",
+      "value": "0",
+      "receipt": {
+        "status": 7,
+        "executions": [
+          {
+            "mode": "leader",
+            "vote": null,
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          },
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x0B50B270Eba5D9B780272C4Cf4720260177e761D": "agree",
+          "0x40533175AfBbAee2c030F88259Afb5aEDbCF0E05": "agree",
+          "0x8Ce1805d6970d54748dE7160b5b395dCC5c71F44": "idle",
+          "0xA712cB25a4002666FA9D09477251f238dD9e06b3": "agree",
+          "0xad7d13f269CeAd4379E64a1A3a0803a827e70B43": "agree"
+        }
+      },
+      "success": true
+    },
+    {
+      "label": "bj-direct-approval-02:release",
+      "hash": "0xfa80802691317d6209220a9e4efd344a4f4b146f29455048920a311fb5225e47",
+      "method": "release_reward",
+      "args": [
+        "bj-direct-approval-02"
+      ],
+      "signer": "0xA6a5fd4d413C1A4aa2e8Bd82cAD9EF8997e105b2",
+      "value": "0",
+      "receipt": {
+        "status": 7,
+        "executions": [
+          {
+            "mode": "leader",
+            "vote": null,
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          },
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x1dEcE6A694520b1d3a2e24b9f28500858C756BDb": "agree",
+          "0x7bf4Ea55363bbe73A4dd5b3900bf03c978A63b6e": "agree",
+          "0x892C437da9b9CA0b6017B6f046F58E3526B46ec6": "agree",
+          "0x8Ce1805d6970d54748dE7160b5b395dCC5c71F44": "agree",
+          "0xA712cB25a4002666FA9D09477251f238dD9e06b3": "agree"
+        }
+      },
+      "success": true
+    },
+    {
+      "label": "bj-approval-01:challenge",
+      "hash": "0xed7d2159f7babcd0aaa9eea70bf3086003423bc6cbf817c0a09e3a567c897cae",
+      "method": "challenge",
+      "args": [
+        "bj-approval-01",
+        "https://raw.githubusercontent.com/amzar1st/bountyjudge/dc803457831d00ebca09cd8a6b4eeef42344aa88/fixtures/bj-approval-01.py"
+      ],
+      "signer": "0xC9b5C46F2AD9021496e5E389958b810d72dB8Bd1",
+      "value": "0",
+      "receipt": {
+        "status": 7,
+        "executions": [
+          {
+            "mode": "leader",
+            "vote": null,
+            "execution_result": "ERROR",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "rollback",
+              "payload": "Challenge unavailable"
+            }
+          },
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "execution_result": "ERROR",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "rollback",
+              "payload": "Challenge unavailable"
+            }
+          }
+        ],
+        "votes": {
+          "0x0B50B270Eba5D9B780272C4Cf4720260177e761D": "agree",
+          "0x17ac0CaefB18205c737e64ee582c9245A28ca1f9": "agree",
+          "0x2FcBC452425f2F1e102c5c04b4331fcB46ee1c00": "agree",
+          "0x40533175AfBbAee2c030F88259Afb5aEDbCF0E05": "agree",
+          "0x6a4179A851B3747A458baD2f089AB2EeFE0eBbAb": "agree"
+        }
+      },
+      "success": false,
+      "observation": "Attempted recovery arrived after the challenge window and was rejected; it did not alter escrow."
     }
   ],
   "cases": {
@@ -2162,7 +2337,7 @@
       "challenges": [],
       "claimant": "0xa6a5fd4d413c1a4aa2e8bd82cad9ef8997e105b2",
       "deadline": 1792572331,
-      "escrow_wei": "10000000000000000",
+      "escrow_wei": "0",
       "head_sha": "63968d7d84a0f7ec33350fcc7741b860b2913587",
       "history": [
         {
@@ -2179,6 +2354,16 @@
           "action": "REVIEWED",
           "actor": "0xc9b5c46f2ad9021496e5e389958b810d72db8bd1",
           "at": 1792399626
+        },
+        {
+          "action": "FINALIZED_ELIGIBLE",
+          "actor": "0xc9b5c46f2ad9021496e5e389958b810d72db8bd1",
+          "at": 1792399936
+        },
+        {
+          "action": "PAYOUT_REQUESTED",
+          "actor": "0xa6a5fd4d413c1a4aa2e8bd82cad9ef8997e105b2",
+          "at": 1792399975
         }
       ],
       "id": "bj-direct-approval-02",
@@ -2266,9 +2451,14 @@
         }
       ],
       "reward_wei": "10000000000000000",
-      "state": "REVIEWED",
+      "state": "PAYOUT_REQUESTED",
       "title": "Normalize a handle with a minimal implementation",
-      "transfer": null
+      "transfer": {
+        "at": 1792399975,
+        "kind": "REWARD",
+        "recipient": "0xa6a5fd4d413c1a4aa2e8bd82cad9ef8997e105b2",
+        "wei": "10000000000000000"
+      }
     }
   },
   "startedAt": "2026-10-19T08:19:50.856Z",
@@ -2341,6 +2531,30 @@
       ],
       "recipientCreditVerified": true,
       "contractDebitVerified": true
+    },
+    "bj-direct-approval-02": {
+      "recipient": "0xA6a5fd4d413C1A4aa2e8Bd82cAD9EF8997e105b2",
+      "amountWei": "10000000000000000",
+      "before": {
+        "recipient": "0x25f2971a3025310000",
+        "contract": "0x2386f26fc10000"
+      },
+      "samples": [
+        {
+          "at": "2026-10-19T08:53:30.017Z",
+          "recipient": "0x25f2971a3025310000",
+          "contract": "0x0"
+        },
+        {
+          "at": "2026-10-19T08:53:42.489Z",
+          "recipient": "0x25f2baa12294f20000",
+          "contract": "0x0"
+        }
+      ],
+      "recipientCreditVerified": true,
+      "contractDebitVerified": true
     }
-  }
+  },
+  "completedAt": "2026-10-19T08:55:43.029Z",
+  "finalContractBalanceWei": "0"
 }
