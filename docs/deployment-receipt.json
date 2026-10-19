@@ -1,0 +1,49 @@
+{
+  "status": 7,
+  "to_address": "0x52e9e821E997c3fF195C226d57A1eCb14a58E1b4",
+  "votes": {
+    "0x1242E9f5bf9b253327f130E8802b7b2F438A21Ef": "agree",
+    "0x2FcBC452425f2F1e102c5c04b4331fcB46ee1c00": "idle",
+    "0x5Bbbd7cdD63c0ba7f088038Cb049bDDAbE4F6fd1": "agree",
+    "0xad7d13f269CeAd4379E64a1A3a0803a827e70B43": "idle",
+    "0xe7eEe8a1c1690b0322d795B80A76ab2Cd1a0eAFd": "agree"
+  },
+  "executions": [
+    {
+      "mode": "leader",
+      "vote": null,
+      "execution_result": "SUCCESS",
+      "result": {
+        "status": "return",
+        "payload": {
+          "readable": "null"
+        }
+      },
+      "genvm_result": {
+        "stderr": "",
+        "stdout": "",
+        "raw_error": null,
+        "error_code": null,
+        "error_description": null
+      }
+    },
+    {
+      "mode": "validator",
+      "vote": "agree",
+      "execution_result": "SUCCESS",
+      "result": {
+        "status": "return",
+        "payload": {
+          "readable": "null"
+        }
+      },
+      "genvm_result": {
+        "stderr": "",
+        "stdout": "",
+        "raw_error": null,
+        "error_code": null,
+        "error_description": null
+      }
+    }
+  ]
+}

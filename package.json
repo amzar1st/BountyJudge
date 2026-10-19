@@ -1,0 +1,17 @@
+{
+  "name": "bountyjudge",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "test": "python3 -m unittest discover -s tests -v && node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "genlayer-js": "1.1.8",
+    "viem": "2.57.2"
+  },
+  "devDependencies": {
+    "vite": "6.4.1"
+  }
+}
