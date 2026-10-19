@@ -27,11 +27,17 @@ export function testAccount(){
 export async function guard(connection){
  if(connection.provider){const p=connection.provider;const ac=await p.request({method:'eth_accounts'});if(ac[0]?.toLowerCase()!==connection.address.toLowerCase()||Number(await p.request({method:'eth_chainId'}))!==61999)throw Error('Wallet account or network changed. Reconnect before signing.');}
 }
+export async function waitForFinalized(client,hash,{interval=3000,retries=100,retryDelayMs=2000,onRetry=()=>{}}={}){
+ for(let attempt=0;attempt<3;attempt++){
+  try{return await client.waitForTransactionReceipt({hash,status:'FINALIZED',interval,retries});}
+  catch(e){if(attempt===2)throw e;onRetry(hash);await new Promise(r=>setTimeout(r,retryDelayMs));}
+ }
+}
 export async function send(connection,address,functionName,args,value,report){
  await guard(connection);
  const hash=await connection.client.writeContract({address,functionName,args,value,leaderOnly:false});
  if(!/^0x[0-9a-f]{64}$/i.test(hash))throw Error('Invalid transaction hash');
  report(hash,'Submitted. Waiting for consensus and finality.');
- const receipt=await connection.client.waitForTransactionReceipt({hash,status:'FINALIZED',interval:3000,retries:100});
+ const receipt=await waitForFinalized(connection.client,hash,{onRetry:()=>report(hash,'RPC temporarily unavailable. Still tracking the same submitted transaction.')});
  assertReceipt(receipt);report(hash,'Finalized with successful execution.');return receipt;
 }

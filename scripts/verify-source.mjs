@@ -1,0 +1,10 @@
+import fs from 'node:fs/promises';import {createHash} from 'node:crypto';
+import {createClient} from 'genlayer-js';import {studionet} from 'genlayer-js/chains';
+const d=JSON.parse(await fs.readFile('docs/deployment.json','utf8')),c=createClient({chain:studionet});
+const raw=await c.request({method:'gen_getContractCode',params:[d.address]});
+if(typeof raw!=='string')throw Error('Unexpected contract code response');
+const hash=value=>createHash('sha256').update(value).digest('hex');
+const remote=hash(Buffer.from(raw,'base64')),local=hash(await fs.readFile('contracts/bountyjudge.py'));
+if(remote!==local||remote!==d.sourceSha256)throw Error('Deployed contract code checksum mismatch');
+await fs.writeFile('docs/source-verification.json',JSON.stringify({contract:d.address,network:'Studionet',codeState:'accepted (legacy Studionet RPC); deployment finalized',rpcParameterStyle:'address string',localSha256:local,onChainSha256:remote,checkedAt:new Date().toISOString()},null,2)+'\n');
+console.log('On-chain code matches local source:',remote);

@@ -1,0 +1,2346 @@
+{
+  "network": "Studionet",
+  "contract": "0x46987EFCfe8bC16202D77164E6b6cF618894Aabf",
+  "owner": "0xC9b5C46F2AD9021496e5E389958b810d72dB8Bd1",
+  "developer": "0xA6a5fd4d413C1A4aa2e8Bd82cAD9EF8997e105b2",
+  "origin": "SDK generated test accounts; browser signing not verified",
+  "transactions": [
+    {
+      "label": "bj-dispute-01:create",
+      "hash": "0x1b91675024cfe6f4a2b11602cc0a3e4f71e31403fd22edb737edaf11fd2ab518",
+      "method": "create_bounty",
+      "args": [
+        "bj-dispute-01",
+        "Review a challenged implementation",
+        "amzar1st/BountyJudge",
+        "[\"Implement normalize_handle(value) that strips surrounding whitespace and lowercases a string.\"]",
+        1792570798
+      ],
+      "signer": "0xC9b5C46F2AD9021496e5E389958b810d72dB8Bd1",
+      "value": "10000000000000000",
+      "receipt": {
+        "status": 7,
+        "executions": [
+          {
+            "mode": "leader",
+            "vote": null,
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          },
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x0B50B270Eba5D9B780272C4Cf4720260177e761D": "agree",
+          "0x7bf4Ea55363bbe73A4dd5b3900bf03c978A63b6e": "agree",
+          "0x8a876C3F3a4783Bd123982bcBF3c672dc0239004": "agree",
+          "0xA712cB25a4002666FA9D09477251f238dD9e06b3": "agree",
+          "0xf29b6947ed298d139FC2655DB15D868C9AbB3091": "agree"
+        }
+      },
+      "success": true
+    },
+    {
+      "label": "bj-dispute-01:submit",
+      "hash": "0x8950957f0ce82b0589965ea8f9130b9d1a9ad2fd8dcd8062a53a27fc6ea53c40",
+      "method": "submit_pr",
+      "args": [
+        "bj-dispute-01",
+        2,
+        "92b24fc15544657e766d56aad474101d4f622a54"
+      ],
+      "signer": "0xA6a5fd4d413C1A4aa2e8Bd82cAD9EF8997e105b2",
+      "value": "0",
+      "receipt": {
+        "status": 7,
+        "executions": [
+          {
+            "mode": "leader",
+            "vote": null,
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          },
+          {
+            "mode": "validator",
+            "vote": "idle",
+            "execution_result": "ERROR",
+            "genvm_result": {
+              "stderr": "Validator execution cancelled after quorum",
+              "stdout": "",
+              "raw_error": {
+                "fatal": false,
+                "causes": [
+                  "VALIDATOR_QUORUM_REACHED"
+                ]
+              },
+              "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+            },
+            "result": {
+              "status": "contract_error",
+              "payload": "idle"
+            }
+          }
+        ],
+        "votes": {
+          "0x2FcBC452425f2F1e102c5c04b4331fcB46ee1c00": "agree",
+          "0x5Bbbd7cdD63c0ba7f088038Cb049bDDAbE4F6fd1": "agree",
+          "0xA712cB25a4002666FA9D09477251f238dD9e06b3": "idle",
+          "0xf1C7551292319EE334e2D8A24eAC108Bd4C63b21": "agree",
+          "0xf29b6947ed298d139FC2655DB15D868C9AbB3091": "idle"
+        }
+      },
+      "success": true
+    },
+    {
+      "label": "bj-dispute-01:review",
+      "hash": "0x2a68eaf86f6d3e48662b6fa5093299845aa47fabe70c372fc3994cfebcddaba8",
+      "method": "review",
+      "args": [
+        "bj-dispute-01"
+      ],
+      "signer": "0xC9b5C46F2AD9021496e5E389958b810d72dB8Bd1",
+      "value": "0",
+      "receipt": {
+        "status": 7,
+        "executions": [
+          {
+            "mode": "leader",
+            "vote": null,
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          },
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x1dEcE6A694520b1d3a2e24b9f28500858C756BDb": "agree",
+          "0x7bf4Ea55363bbe73A4dd5b3900bf03c978A63b6e": "idle",
+          "0x8a876C3F3a4783Bd123982bcBF3c672dc0239004": "disagree",
+          "0xA712cB25a4002666FA9D09477251f238dD9e06b3": "agree",
+          "0xad7d13f269CeAd4379E64a1A3a0803a827e70B43": "agree"
+        }
+      },
+      "success": true
+    },
+    {
+      "label": "bj-dispute-01:challenge",
+      "hash": "0x68729a2a2e9e1e9e356f4ec92a779242ba3bcf2cdae17394480cfbc6c7e333e8",
+      "method": "challenge",
+      "args": [
+        "bj-dispute-01",
+        "https://raw.githubusercontent.com/amzar1st/bountyjudge/92b24fc15544657e766d56aad474101d4f622a54/fixtures/missing-counter-evidence.txt"
+      ],
+      "signer": "0xC9b5C46F2AD9021496e5E389958b810d72dB8Bd1",
+      "value": "0",
+      "receipt": {
+        "status": 7,
+        "executions": [
+          {
+            "mode": "leader",
+            "vote": null,
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          },
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x5Bbbd7cdD63c0ba7f088038Cb049bDDAbE4F6fd1": "agree",
+          "0xA712cB25a4002666FA9D09477251f238dD9e06b3": "agree",
+          "0xa21bc502E3578E4b3039be8c59a257198f7c3f19": "agree",
+          "0xad7d13f269CeAd4379E64a1A3a0803a827e70B43": "agree",
+          "0xf29b6947ed298d139FC2655DB15D868C9AbB3091": "agree"
+        }
+      },
+      "success": true
+    },
+    {
+      "label": "bj-dispute-01:respond",
+      "hash": "0xa972c50c38c7f38af9b47611c906ff4bff9d5bfe55c3514e1faa3be8ec1f279f",
+      "method": "respond",
+      "args": [
+        "bj-dispute-01",
+        "https://raw.githubusercontent.com/amzar1st/bountyjudge/92b24fc15544657e766d56aad474101d4f622a54/fixtures/bj-dispute-01.py"
+      ],
+      "signer": "0xA6a5fd4d413C1A4aa2e8Bd82cAD9EF8997e105b2",
+      "value": "0",
+      "receipt": {
+        "status": 7,
+        "executions": [
+          {
+            "mode": "leader",
+            "vote": null,
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          },
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x0B50B270Eba5D9B780272C4Cf4720260177e761D": "agree",
+          "0x9244De5F20cB75A0c51d79A9A3208D00a99aFc10": "idle",
+          "0xA712cB25a4002666FA9D09477251f238dD9e06b3": "agree",
+          "0xa21bc502E3578E4b3039be8c59a257198f7c3f19": "idle",
+          "0xe7eEe8a1c1690b0322d795B80A76ab2Cd1a0eAFd": "agree"
+        }
+      },
+      "success": true
+    },
+    {
+      "label": "bj-approval-01:create",
+      "hash": "0x9d75a882a8d74c94b3506c79c4008ff1d921e06d189caf204a277aee3369030d",
+      "method": "create_bounty",
+      "args": [
+        "bj-approval-01",
+        "Normalize contributor handles",
+        "amzar1st/BountyJudge",
+        "[\"Implement normalize_handle(value) that strips surrounding whitespace and lowercases a string.\"]",
+        1792571178
+      ],
+      "signer": "0xC9b5C46F2AD9021496e5E389958b810d72dB8Bd1",
+      "value": "10000000000000000",
+      "receipt": {
+        "status": 7,
+        "executions": [
+          {
+            "mode": "leader",
+            "vote": null,
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          },
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x1dEcE6A694520b1d3a2e24b9f28500858C756BDb": "agree",
+          "0x8Ce1805d6970d54748dE7160b5b395dCC5c71F44": "agree",
+          "0x9244De5F20cB75A0c51d79A9A3208D00a99aFc10": "agree",
+          "0xA712cB25a4002666FA9D09477251f238dD9e06b3": "agree",
+          "0xf29b6947ed298d139FC2655DB15D868C9AbB3091": "agree"
+        }
+      },
+      "success": true
+    },
+    {
+      "label": "bj-rejection-01:create",
+      "hash": "0xafe23ecaa45dd296e781d11c7613ad21a08c22fc25844ee64bc4404fa24c2602",
+      "method": "create_bounty",
+      "args": [
+        "bj-rejection-01",
+        "Reject a contradicted requirement",
+        "amzar1st/BountyJudge",
+        "[\"Implement normalize_handle(value) that returns value.upper() without stripping whitespace.\"]",
+        1792571224
+      ],
+      "signer": "0xC9b5C46F2AD9021496e5E389958b810d72dB8Bd1",
+      "value": "10000000000000000",
+      "receipt": {
+        "status": 7,
+        "executions": [
+          {
+            "mode": "leader",
+            "vote": null,
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          },
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x1dEcE6A694520b1d3a2e24b9f28500858C756BDb": "agree",
+          "0x40533175AfBbAee2c030F88259Afb5aEDbCF0E05": "agree",
+          "0x5Bbbd7cdD63c0ba7f088038Cb049bDDAbE4F6fd1": "agree",
+          "0x892C437da9b9CA0b6017B6f046F58E3526B46ec6": "agree",
+          "0xA712cB25a4002666FA9D09477251f238dD9e06b3": "agree"
+        }
+      },
+      "success": true
+    },
+    {
+      "label": "bj-unknown-01:create",
+      "hash": "0x2ec214c4de4ccbc53200f7078847266ed1efd832963f4c075c71c2809f528c0f",
+      "method": "create_bounty",
+      "args": [
+        "bj-unknown-01",
+        "Require unavailable runtime evidence",
+        "amzar1st/BountyJudge",
+        "[\"Provide independently verified proof that normalize_handle was deployed and passed a live wallet integration test.\"]",
+        1792571262
+      ],
+      "signer": "0xC9b5C46F2AD9021496e5E389958b810d72dB8Bd1",
+      "value": "10000000000000000",
+      "receipt": {
+        "status": 7,
+        "executions": [
+          {
+            "mode": "leader",
+            "vote": null,
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          },
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x17ac0CaefB18205c737e64ee582c9245A28ca1f9": "agree",
+          "0x40533175AfBbAee2c030F88259Afb5aEDbCF0E05": "agree",
+          "0x5Bbbd7cdD63c0ba7f088038Cb049bDDAbE4F6fd1": "agree",
+          "0x7bf4Ea55363bbe73A4dd5b3900bf03c978A63b6e": "agree",
+          "0xa21bc502E3578E4b3039be8c59a257198f7c3f19": "agree"
+        }
+      },
+      "success": true
+    },
+    {
+      "label": "bj-approval-01:submit",
+      "hash": "0xd6d1091740b3a0dc67e6fef16dfb04bcad7c52ceb8ea6f46ba2d04e01e306867",
+      "method": "submit_pr",
+      "args": [
+        "bj-approval-01",
+        1,
+        "dc803457831d00ebca09cd8a6b4eeef42344aa88"
+      ],
+      "signer": "0xA6a5fd4d413C1A4aa2e8Bd82cAD9EF8997e105b2",
+      "value": "0",
+      "receipt": {
+        "status": 7,
+        "executions": [
+          {
+            "mode": "leader",
+            "vote": null,
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          },
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x0B50B270Eba5D9B780272C4Cf4720260177e761D": "idle",
+          "0x1242E9f5bf9b253327f130E8802b7b2F438A21Ef": "agree",
+          "0xad7d13f269CeAd4379E64a1A3a0803a827e70B43": "idle",
+          "0xe7eEe8a1c1690b0322d795B80A76ab2Cd1a0eAFd": "agree",
+          "0xf1C7551292319EE334e2D8A24eAC108Bd4C63b21": "agree"
+        }
+      },
+      "success": true
+    },
+    {
+      "label": "bj-approval-01:review",
+      "hash": "0x7b89af6c221931f909c384a30eb5b8607c532c3c17ded31126e672d3affcc8cc",
+      "method": "review",
+      "args": [
+        "bj-approval-01"
+      ],
+      "signer": "0xC9b5C46F2AD9021496e5E389958b810d72dB8Bd1",
+      "value": "0",
+      "receipt": {
+        "status": 7,
+        "executions": [
+          {
+            "mode": "leader",
+            "vote": null,
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          },
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x17ac0CaefB18205c737e64ee582c9245A28ca1f9": "idle",
+          "0x6a4179A851B3747A458baD2f089AB2EeFE0eBbAb": "idle",
+          "0x892C437da9b9CA0b6017B6f046F58E3526B46ec6": "agree",
+          "0xa21bc502E3578E4b3039be8c59a257198f7c3f19": "agree",
+          "0xe7eEe8a1c1690b0322d795B80A76ab2Cd1a0eAFd": "agree"
+        }
+      },
+      "success": true
+    },
+    {
+      "label": "bj-dispute-01:dispute-review",
+      "hash": "0x842dee85a72b16e90d2213ef5424ef446ed0f080dcde544e6b5ad967d4abed30",
+      "method": "review",
+      "args": [
+        "bj-dispute-01"
+      ],
+      "signer": "0xC9b5C46F2AD9021496e5E389958b810d72dB8Bd1",
+      "value": "0",
+      "receipt": {
+        "status": 7,
+        "executions": [
+          {
+            "mode": "leader",
+            "vote": null,
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          },
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x17ac0CaefB18205c737e64ee582c9245A28ca1f9": "agree",
+          "0x6a4179A851B3747A458baD2f089AB2EeFE0eBbAb": "idle",
+          "0x892C437da9b9CA0b6017B6f046F58E3526B46ec6": "disagree",
+          "0xad7d13f269CeAd4379E64a1A3a0803a827e70B43": "agree",
+          "0xe7eEe8a1c1690b0322d795B80A76ab2Cd1a0eAFd": "agree"
+        }
+      },
+      "success": true
+    },
+    {
+      "label": "bj-dispute-01:finalize",
+      "hash": "0xaaebe025cf648be1bbe0e0874f693b5124ac074b4841629ddbebaaeff0143a03",
+      "method": "finalize",
+      "args": [
+        "bj-dispute-01"
+      ],
+      "signer": "0xC9b5C46F2AD9021496e5E389958b810d72dB8Bd1",
+      "value": "0",
+      "receipt": {
+        "status": 7,
+        "executions": [
+          {
+            "mode": "leader",
+            "vote": null,
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          },
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x2FcBC452425f2F1e102c5c04b4331fcB46ee1c00": "agree",
+          "0x40533175AfBbAee2c030F88259Afb5aEDbCF0E05": "idle",
+          "0x5Bbbd7cdD63c0ba7f088038Cb049bDDAbE4F6fd1": "idle",
+          "0x892C437da9b9CA0b6017B6f046F58E3526B46ec6": "agree",
+          "0x8a876C3F3a4783Bd123982bcBF3c672dc0239004": "agree"
+        }
+      },
+      "success": true
+    },
+    {
+      "label": "bj-dispute-01:release",
+      "hash": "0x6f26bd56ddc007c91dbd193597190bf77e169ae16751189de4de4a4605e3bb46",
+      "method": "release_reward",
+      "args": [
+        "bj-dispute-01"
+      ],
+      "signer": "0xA6a5fd4d413C1A4aa2e8Bd82cAD9EF8997e105b2",
+      "value": "0",
+      "receipt": {
+        "status": 7,
+        "executions": [
+          {
+            "mode": "leader",
+            "vote": null,
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          },
+          {
+            "mode": "validator",
+            "vote": "idle",
+            "execution_result": "ERROR",
+            "genvm_result": {
+              "stderr": "Validator execution cancelled after quorum",
+              "stdout": "",
+              "raw_error": {
+                "fatal": false,
+                "causes": [
+                  "VALIDATOR_QUORUM_REACHED"
+                ]
+              },
+              "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+            },
+            "result": {
+              "status": "contract_error",
+              "payload": "idle"
+            }
+          }
+        ],
+        "votes": {
+          "0x1dEcE6A694520b1d3a2e24b9f28500858C756BDb": "idle",
+          "0x6a4179A851B3747A458baD2f089AB2EeFE0eBbAb": "agree",
+          "0xa21bc502E3578E4b3039be8c59a257198f7c3f19": "agree",
+          "0xad7d13f269CeAd4379E64a1A3a0803a827e70B43": "agree",
+          "0xf1C7551292319EE334e2D8A24eAC108Bd4C63b21": "idle"
+        }
+      },
+      "success": true
+    },
+    {
+      "label": "bj-approval-01:finalize",
+      "hash": "0x1401584eb181ecc2fde16bd7b2ad0ec1724ee5af50925976a412d88e180eb9b3",
+      "method": "finalize",
+      "args": [
+        "bj-approval-01"
+      ],
+      "signer": "0xC9b5C46F2AD9021496e5E389958b810d72dB8Bd1",
+      "value": "0",
+      "receipt": {
+        "status": 7,
+        "executions": [
+          {
+            "mode": "leader",
+            "vote": null,
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          },
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x0B50B270Eba5D9B780272C4Cf4720260177e761D": "agree",
+          "0x5Bbbd7cdD63c0ba7f088038Cb049bDDAbE4F6fd1": "agree",
+          "0x7bf4Ea55363bbe73A4dd5b3900bf03c978A63b6e": "idle",
+          "0xad7d13f269CeAd4379E64a1A3a0803a827e70B43": "idle",
+          "0xe7eEe8a1c1690b0322d795B80A76ab2Cd1a0eAFd": "agree"
+        }
+      },
+      "success": true
+    },
+    {
+      "label": "bj-approval-01:refund",
+      "hash": "0x0adb0eb183e39f8963142c33a6d99192092406e617a117cf86df32835a20cbef",
+      "method": "refund",
+      "args": [
+        "bj-approval-01"
+      ],
+      "signer": "0xC9b5C46F2AD9021496e5E389958b810d72dB8Bd1",
+      "value": "0",
+      "receipt": {
+        "status": 7,
+        "executions": [
+          {
+            "mode": "leader",
+            "vote": null,
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          },
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x17ac0CaefB18205c737e64ee582c9245A28ca1f9": "agree",
+          "0x7bf4Ea55363bbe73A4dd5b3900bf03c978A63b6e": "agree",
+          "0x8a876C3F3a4783Bd123982bcBF3c672dc0239004": "agree",
+          "0xa21bc502E3578E4b3039be8c59a257198f7c3f19": "agree",
+          "0xad7d13f269CeAd4379E64a1A3a0803a827e70B43": "agree"
+        }
+      },
+      "success": true
+    },
+    {
+      "label": "bj-rejection-01:submit",
+      "hash": "0xcf6953faeb75ed36512093909d67458e794ca63478afadf7edebac829b902a52",
+      "method": "submit_pr",
+      "args": [
+        "bj-rejection-01",
+        3,
+        "f9a10952a4d936edbfb24fdd270d61c744867e28"
+      ],
+      "signer": "0xA6a5fd4d413C1A4aa2e8Bd82cAD9EF8997e105b2",
+      "value": "0",
+      "receipt": {
+        "status": 7,
+        "executions": [
+          {
+            "mode": "leader",
+            "vote": null,
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          },
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x1242E9f5bf9b253327f130E8802b7b2F438A21Ef": "agree",
+          "0x1dEcE6A694520b1d3a2e24b9f28500858C756BDb": "agree",
+          "0x2FcBC452425f2F1e102c5c04b4331fcB46ee1c00": "agree",
+          "0x892C437da9b9CA0b6017B6f046F58E3526B46ec6": "idle",
+          "0xf1C7551292319EE334e2D8A24eAC108Bd4C63b21": "idle"
+        }
+      },
+      "success": true
+    },
+    {
+      "label": "bj-rejection-01:review",
+      "hash": "0xb80b2027989142e474a3e0f26f0abdd4967ba2d18f88730c70021af52856b10f",
+      "method": "review",
+      "args": [
+        "bj-rejection-01"
+      ],
+      "signer": "0xC9b5C46F2AD9021496e5E389958b810d72dB8Bd1",
+      "value": "0",
+      "receipt": {
+        "status": 7,
+        "executions": [
+          {
+            "mode": "leader",
+            "vote": null,
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          },
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x17ac0CaefB18205c737e64ee582c9245A28ca1f9": "agree",
+          "0x2FcBC452425f2F1e102c5c04b4331fcB46ee1c00": "disagree",
+          "0x8Ce1805d6970d54748dE7160b5b395dCC5c71F44": "agree",
+          "0x8a876C3F3a4783Bd123982bcBF3c672dc0239004": "disagree",
+          "0xad7d13f269CeAd4379E64a1A3a0803a827e70B43": "agree"
+        }
+      },
+      "success": true
+    },
+    {
+      "label": "bj-unknown-01:submit",
+      "hash": "0x29a7b2825897a75dc2c7fcb2f32f9c37a19f705c8925cc918df59eb3ebbb1751",
+      "method": "submit_pr",
+      "args": [
+        "bj-unknown-01",
+        4,
+        "1f1efa4e2f8674b4502ca09799ae5089e89cf45e"
+      ],
+      "signer": "0xA6a5fd4d413C1A4aa2e8Bd82cAD9EF8997e105b2",
+      "value": "0",
+      "receipt": {
+        "status": 7,
+        "executions": [
+          {
+            "mode": "leader",
+            "vote": null,
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          },
+          {
+            "mode": "validator",
+            "vote": "idle",
+            "execution_result": "ERROR",
+            "genvm_result": {
+              "stderr": "Validator execution cancelled after quorum",
+              "stdout": "",
+              "raw_error": {
+                "fatal": false,
+                "causes": [
+                  "VALIDATOR_QUORUM_REACHED"
+                ]
+              },
+              "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+            },
+            "result": {
+              "status": "contract_error",
+              "payload": "idle"
+            }
+          }
+        ],
+        "votes": {
+          "0x7bf4Ea55363bbe73A4dd5b3900bf03c978A63b6e": "agree",
+          "0x8a876C3F3a4783Bd123982bcBF3c672dc0239004": "idle",
+          "0xb0925568bFbCF00aADBcA053E6D0E1628ff3d530": "agree",
+          "0xe7eEe8a1c1690b0322d795B80A76ab2Cd1a0eAFd": "idle",
+          "0xf29b6947ed298d139FC2655DB15D868C9AbB3091": "agree"
+        }
+      },
+      "success": true
+    },
+    {
+      "label": "bj-unknown-01:review",
+      "hash": "0xc57402dcfdcae4f0cf7d71fcecbbe9b079fbad059a7f54e101365aa2f32faa38",
+      "method": "review",
+      "args": [
+        "bj-unknown-01"
+      ],
+      "signer": "0xC9b5C46F2AD9021496e5E389958b810d72dB8Bd1",
+      "value": "0",
+      "receipt": {
+        "status": 7,
+        "executions": [
+          {
+            "mode": "leader",
+            "vote": null,
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          },
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x1dEcE6A694520b1d3a2e24b9f28500858C756BDb": "disagree",
+          "0x8a876C3F3a4783Bd123982bcBF3c672dc0239004": "agree",
+          "0x9244De5F20cB75A0c51d79A9A3208D00a99aFc10": "disagree",
+          "0xa21bc502E3578E4b3039be8c59a257198f7c3f19": "agree",
+          "0xb0925568bFbCF00aADBcA053E6D0E1628ff3d530": "agree"
+        }
+      },
+      "success": true
+    },
+    {
+      "label": "bj-rejection-01:finalize",
+      "hash": "0xbb7bfd8a19bab3292fc444e040a48fa35ffcb8a70f2d78fd279ee8a17c1e2e9d",
+      "method": "finalize",
+      "args": [
+        "bj-rejection-01"
+      ],
+      "signer": "0xC9b5C46F2AD9021496e5E389958b810d72dB8Bd1",
+      "value": "0",
+      "receipt": {
+        "status": 7,
+        "executions": [
+          {
+            "mode": "leader",
+            "vote": null,
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          },
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x6a4179A851B3747A458baD2f089AB2EeFE0eBbAb": "agree",
+          "0x7bf4Ea55363bbe73A4dd5b3900bf03c978A63b6e": "agree",
+          "0xa21bc502E3578E4b3039be8c59a257198f7c3f19": "agree",
+          "0xe7eEe8a1c1690b0322d795B80A76ab2Cd1a0eAFd": "idle",
+          "0xf29b6947ed298d139FC2655DB15D868C9AbB3091": "idle"
+        }
+      },
+      "success": true
+    },
+    {
+      "label": "bj-rejection-01:refund",
+      "hash": "0xbd532fd0fcb66551708385834d93b8bbd322ebf1b1d49d3340654568648e4943",
+      "method": "refund",
+      "args": [
+        "bj-rejection-01"
+      ],
+      "signer": "0xC9b5C46F2AD9021496e5E389958b810d72dB8Bd1",
+      "value": "0",
+      "receipt": {
+        "status": 7,
+        "executions": [
+          {
+            "mode": "leader",
+            "vote": null,
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          },
+          {
+            "mode": "validator",
+            "vote": "idle",
+            "execution_result": "ERROR",
+            "genvm_result": {
+              "stderr": "Validator execution cancelled after quorum",
+              "stdout": "",
+              "raw_error": {
+                "fatal": false,
+                "causes": [
+                  "VALIDATOR_QUORUM_REACHED"
+                ]
+              },
+              "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+            },
+            "result": {
+              "status": "contract_error",
+              "payload": "idle"
+            }
+          }
+        ],
+        "votes": {
+          "0x0B50B270Eba5D9B780272C4Cf4720260177e761D": "agree",
+          "0x17ac0CaefB18205c737e64ee582c9245A28ca1f9": "agree",
+          "0x1dEcE6A694520b1d3a2e24b9f28500858C756BDb": "agree",
+          "0x892C437da9b9CA0b6017B6f046F58E3526B46ec6": "idle",
+          "0xe7eEe8a1c1690b0322d795B80A76ab2Cd1a0eAFd": "idle"
+        }
+      },
+      "success": true
+    },
+    {
+      "label": "bj-unknown-01:finalize",
+      "hash": "0x1ac7ccca5eb1e6de16fcd2aadd96dd80cc26dac9ea8d34065f220615e2130fe8",
+      "method": "finalize",
+      "args": [
+        "bj-unknown-01"
+      ],
+      "signer": "0xC9b5C46F2AD9021496e5E389958b810d72dB8Bd1",
+      "value": "0",
+      "receipt": {
+        "status": 7,
+        "executions": [
+          {
+            "mode": "leader",
+            "vote": null,
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          },
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x40533175AfBbAee2c030F88259Afb5aEDbCF0E05": "agree",
+          "0x5Bbbd7cdD63c0ba7f088038Cb049bDDAbE4F6fd1": "agree",
+          "0x6a4179A851B3747A458baD2f089AB2EeFE0eBbAb": "idle",
+          "0x9244De5F20cB75A0c51d79A9A3208D00a99aFc10": "agree",
+          "0xf29b6947ed298d139FC2655DB15D868C9AbB3091": "idle"
+        }
+      },
+      "success": true
+    },
+    {
+      "label": "bj-unknown-01:refund",
+      "hash": "0x9d355ef00eae125beebdb9cf2d72948b022550173810d748e132a46d36dcbb2e",
+      "method": "refund",
+      "args": [
+        "bj-unknown-01"
+      ],
+      "signer": "0xC9b5C46F2AD9021496e5E389958b810d72dB8Bd1",
+      "value": "0",
+      "receipt": {
+        "status": 7,
+        "executions": [
+          {
+            "mode": "leader",
+            "vote": null,
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          },
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x0B50B270Eba5D9B780272C4Cf4720260177e761D": "agree",
+          "0x1dEcE6A694520b1d3a2e24b9f28500858C756BDb": "agree",
+          "0x40533175AfBbAee2c030F88259Afb5aEDbCF0E05": "agree",
+          "0x6a4179A851B3747A458baD2f089AB2EeFE0eBbAb": "agree",
+          "0x7bf4Ea55363bbe73A4dd5b3900bf03c978A63b6e": "agree"
+        }
+      },
+      "success": true
+    },
+    {
+      "label": "bj-direct-approval-02:create",
+      "hash": "0x949eea8b4ff5ad1eb55bad86839ae56beebd418f11c4d651ac68f55f2bec2c1a",
+      "method": "create_bounty",
+      "args": [
+        "bj-direct-approval-02",
+        "Normalize a handle with a minimal implementation",
+        "amzar1st/BountyJudge",
+        "[\"Implement normalize_handle(value) that strips surrounding whitespace and lowercases a string.\"]",
+        1792572331
+      ],
+      "signer": "0xC9b5C46F2AD9021496e5E389958b810d72dB8Bd1",
+      "value": "10000000000000000",
+      "receipt": {
+        "status": 7,
+        "executions": [
+          {
+            "mode": "leader",
+            "vote": null,
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          },
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x1dEcE6A694520b1d3a2e24b9f28500858C756BDb": "agree",
+          "0x892C437da9b9CA0b6017B6f046F58E3526B46ec6": "agree",
+          "0x8Ce1805d6970d54748dE7160b5b395dCC5c71F44": "agree",
+          "0x9244De5F20cB75A0c51d79A9A3208D00a99aFc10": "agree",
+          "0xf29b6947ed298d139FC2655DB15D868C9AbB3091": "agree"
+        }
+      },
+      "success": true
+    },
+    {
+      "label": "bj-direct-approval-02:submit",
+      "hash": "0x01585e0a1f070f298dd93c7b119bd803b220ecd253a5d6e98f9b9dc2cf242702",
+      "method": "submit_pr",
+      "args": [
+        "bj-direct-approval-02",
+        5,
+        "63968d7d84a0f7ec33350fcc7741b860b2913587"
+      ],
+      "signer": "0xA6a5fd4d413C1A4aa2e8Bd82cAD9EF8997e105b2",
+      "value": "0",
+      "receipt": {
+        "status": 7,
+        "executions": [
+          {
+            "mode": "leader",
+            "vote": null,
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          },
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x0B50B270Eba5D9B780272C4Cf4720260177e761D": "agree",
+          "0x40533175AfBbAee2c030F88259Afb5aEDbCF0E05": "idle",
+          "0x5Bbbd7cdD63c0ba7f088038Cb049bDDAbE4F6fd1": "agree",
+          "0x8a876C3F3a4783Bd123982bcBF3c672dc0239004": "agree",
+          "0xA712cB25a4002666FA9D09477251f238dD9e06b3": "idle"
+        }
+      },
+      "success": true
+    },
+    {
+      "label": "bj-direct-approval-02:review",
+      "hash": "0x713c661b03acd8e5ce9dc085344f42b65bee11f061046f3e7f0d90271d90ea11",
+      "method": "review",
+      "args": [
+        "bj-direct-approval-02"
+      ],
+      "signer": "0xC9b5C46F2AD9021496e5E389958b810d72dB8Bd1",
+      "value": "0",
+      "receipt": {
+        "status": 7,
+        "executions": [
+          {
+            "mode": "leader",
+            "vote": null,
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          },
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x0B50B270Eba5D9B780272C4Cf4720260177e761D": "agree",
+          "0x17ac0CaefB18205c737e64ee582c9245A28ca1f9": "agree",
+          "0x40533175AfBbAee2c030F88259Afb5aEDbCF0E05": "agree",
+          "0x8Ce1805d6970d54748dE7160b5b395dCC5c71F44": "idle",
+          "0xf1C7551292319EE334e2D8A24eAC108Bd4C63b21": "idle"
+        }
+      },
+      "success": true
+    }
+  ],
+  "cases": {
+    "bj-dispute-01": {
+      "challenge_deadline": 1792398382,
+      "challenged": true,
+      "challenger": "0xc9b5c46f2ad9021496e5e389958b810d72db8bd1",
+      "challenges": [
+        "https://raw.githubusercontent.com/amzar1st/bountyjudge/92b24fc15544657e766d56aad474101d4f622a54/fixtures/missing-counter-evidence.txt"
+      ],
+      "claimant": "0xa6a5fd4d413c1a4aa2e8bd82cad9ef8997e105b2",
+      "deadline": 1792570798,
+      "escrow_wei": "0",
+      "head_sha": "92b24fc15544657e766d56aad474101d4f622a54",
+      "history": [
+        {
+          "action": "CREATED_AND_FUNDED",
+          "actor": "0xc9b5c46f2ad9021496e5e389958b810d72db8bd1",
+          "at": 1792397998
+        },
+        {
+          "action": "PR_SUBMITTED",
+          "actor": "0xa6a5fd4d413c1a4aa2e8bd82cad9ef8997e105b2",
+          "at": 1792398041
+        },
+        {
+          "action": "REVIEWED",
+          "actor": "0xc9b5c46f2ad9021496e5e389958b810d72db8bd1",
+          "at": 1792398082
+        },
+        {
+          "action": "CHALLENGED",
+          "actor": "0xc9b5c46f2ad9021496e5e389958b810d72db8bd1",
+          "at": 1792398234
+        },
+        {
+          "action": "RESPONDED",
+          "actor": "0xa6a5fd4d413c1a4aa2e8bd82cad9ef8997e105b2",
+          "at": 1792398272
+        },
+        {
+          "action": "REVIEWED",
+          "actor": "0xc9b5c46f2ad9021496e5e389958b810d72db8bd1",
+          "at": 1792398627
+        },
+        {
+          "action": "FINALIZED_ELIGIBLE",
+          "actor": "0xc9b5c46f2ad9021496e5e389958b810d72db8bd1",
+          "at": 1792398674
+        },
+        {
+          "action": "PAYOUT_REQUESTED",
+          "actor": "0xa6a5fd4d413c1a4aa2e8bd82cad9ef8997e105b2",
+          "at": 1792398712
+        }
+      ],
+      "id": "bj-dispute-01",
+      "owner": "0xc9b5c46f2ad9021496e5e389958b810d72db8bd1",
+      "pr": 2,
+      "repository": "amzar1st/bountyjudge",
+      "requirements": [
+        "Implement normalize_handle(value) that strips surrounding whitespace and lowercases a string."
+      ],
+      "requirements_sha256": "9b40ee443619ddc7aba44c6c4bbfed006a0b05a593867523582529b76c8b3db9",
+      "response_deadline": 1792398534,
+      "responses": [
+        "https://raw.githubusercontent.com/amzar1st/bountyjudge/92b24fc15544657e766d56aad474101d4f622a54/fixtures/bj-dispute-01.py"
+      ],
+      "result": {
+        "candidate_valid": true,
+        "checks": [
+          {
+            "outcome": "PASS",
+            "quotes": [
+              {
+                "quote": "def normalize_handle(value: str) -> str:\n    return value.strip().lower()",
+                "source": 1
+              },
+              {
+                "quote": "+def normalize_handle(value: str) -> str:\\n+    return value.strip().lower()",
+                "source": 2
+              }
+            ],
+            "reason": "The implementation defines normalize_handle(value) and returns the input with surrounding whitespace stripped and converted to lowercase."
+          }
+        ],
+        "outcomes": [
+          "PASS"
+        ],
+        "reason": "Requirement assessment complete",
+        "sources": [
+          {
+            "sha256": "b485722953cfc7ca46e2668e3b1b8177acb251b104a12a9bf4abb4fd41f1d3b4",
+            "url": "https://api.github.com/repos/amzar1st/bountyjudge/pulls/2"
+          },
+          {
+            "sha256": "4ed842a2d4d29af52a255daefdb092c7b2ac69f7cb90711badb3823695918cb8",
+            "url": "https://raw.githubusercontent.com/amzar1st/BountyJudge/92b24fc15544657e766d56aad474101d4f622a54/fixtures/bj-dispute-01.py"
+          },
+          {
+            "sha256": "9002d836d87f6d62014facfd6a5449e378651c58f5647749924f46f7746f5ce8",
+            "url": "https://api.github.com/repos/amzar1st/bountyjudge/pulls/2/files?per_page=100"
+          },
+          {
+            "error": "FETCH_FAILED",
+            "sha256": "",
+            "url": "https://raw.githubusercontent.com/amzar1st/bountyjudge/92b24fc15544657e766d56aad474101d4f622a54/fixtures/missing-counter-evidence.txt"
+          },
+          {
+            "sha256": "4ed842a2d4d29af52a255daefdb092c7b2ac69f7cb90711badb3823695918cb8",
+            "url": "https://raw.githubusercontent.com/amzar1st/bountyjudge/92b24fc15544657e766d56aad474101d4f622a54/fixtures/bj-dispute-01.py"
+          }
+        ],
+        "verdict": "APPROVED"
+      },
+      "review_deadline": 1792484934,
+      "reviews": [
+        {
+          "at": 1792398082,
+          "result": {
+            "candidate_valid": true,
+            "checks": [
+              {
+                "outcome": "PASS",
+                "quotes": [
+                  {
+                    "quote": "def normalize_handle(value: str) -> str:\n    return value.strip().lower()",
+                    "source": 1
+                  }
+                ],
+                "reason": "The implementation defines normalize_handle(value: str) -> str that calls value.strip().lower(), which strips surrounding whitespace and lowercases the string, satisfying the requirement."
+              }
+            ],
+            "outcomes": [
+              "PASS"
+            ],
+            "reason": "Requirement assessment complete",
+            "sources": [
+              {
+                "sha256": "b485722953cfc7ca46e2668e3b1b8177acb251b104a12a9bf4abb4fd41f1d3b4",
+                "url": "https://api.github.com/repos/amzar1st/bountyjudge/pulls/2"
+              },
+              {
+                "sha256": "4ed842a2d4d29af52a255daefdb092c7b2ac69f7cb90711badb3823695918cb8",
+                "url": "https://raw.githubusercontent.com/amzar1st/BountyJudge/92b24fc15544657e766d56aad474101d4f622a54/fixtures/bj-dispute-01.py"
+              },
+              {
+                "sha256": "9002d836d87f6d62014facfd6a5449e378651c58f5647749924f46f7746f5ce8",
+                "url": "https://api.github.com/repos/amzar1st/bountyjudge/pulls/2/files?per_page=100"
+              }
+            ],
+            "verdict": "APPROVED"
+          }
+        },
+        {
+          "at": 1792398627,
+          "result": {
+            "candidate_valid": true,
+            "checks": [
+              {
+                "outcome": "PASS",
+                "quotes": [
+                  {
+                    "quote": "def normalize_handle(value: str) -> str:\n    return value.strip().lower()",
+                    "source": 1
+                  },
+                  {
+                    "quote": "+def normalize_handle(value: str) -> str:\\n+    return value.strip().lower()",
+                    "source": 2
+                  }
+                ],
+                "reason": "The implementation defines normalize_handle(value) and returns the input with surrounding whitespace stripped and converted to lowercase."
+              }
+            ],
+            "outcomes": [
+              "PASS"
+            ],
+            "reason": "Requirement assessment complete",
+            "sources": [
+              {
+                "sha256": "b485722953cfc7ca46e2668e3b1b8177acb251b104a12a9bf4abb4fd41f1d3b4",
+                "url": "https://api.github.com/repos/amzar1st/bountyjudge/pulls/2"
+              },
+              {
+                "sha256": "4ed842a2d4d29af52a255daefdb092c7b2ac69f7cb90711badb3823695918cb8",
+                "url": "https://raw.githubusercontent.com/amzar1st/BountyJudge/92b24fc15544657e766d56aad474101d4f622a54/fixtures/bj-dispute-01.py"
+              },
+              {
+                "sha256": "9002d836d87f6d62014facfd6a5449e378651c58f5647749924f46f7746f5ce8",
+                "url": "https://api.github.com/repos/amzar1st/bountyjudge/pulls/2/files?per_page=100"
+              },
+              {
+                "error": "FETCH_FAILED",
+                "sha256": "",
+                "url": "https://raw.githubusercontent.com/amzar1st/bountyjudge/92b24fc15544657e766d56aad474101d4f622a54/fixtures/missing-counter-evidence.txt"
+              },
+              {
+                "sha256": "4ed842a2d4d29af52a255daefdb092c7b2ac69f7cb90711badb3823695918cb8",
+                "url": "https://raw.githubusercontent.com/amzar1st/bountyjudge/92b24fc15544657e766d56aad474101d4f622a54/fixtures/bj-dispute-01.py"
+              }
+            ],
+            "verdict": "APPROVED"
+          }
+        }
+      ],
+      "reward_wei": "10000000000000000",
+      "state": "PAYOUT_REQUESTED",
+      "title": "Review a challenged implementation",
+      "transfer": {
+        "at": 1792398712,
+        "kind": "REWARD",
+        "recipient": "0xa6a5fd4d413c1a4aa2e8bd82cad9ef8997e105b2",
+        "wei": "10000000000000000"
+      }
+    },
+    "bj-approval-01": {
+      "challenge_deadline": 1792398858,
+      "challenged": false,
+      "challenges": [],
+      "claimant": "0xa6a5fd4d413c1a4aa2e8bd82cad9ef8997e105b2",
+      "deadline": 1792571178,
+      "escrow_wei": "0",
+      "head_sha": "dc803457831d00ebca09cd8a6b4eeef42344aa88",
+      "history": [
+        {
+          "action": "CREATED_AND_FUNDED",
+          "actor": "0xc9b5c46f2ad9021496e5e389958b810d72db8bd1",
+          "at": 1792398378
+        },
+        {
+          "action": "PR_SUBMITTED",
+          "actor": "0xa6a5fd4d413c1a4aa2e8bd82cad9ef8997e105b2",
+          "at": 1792398512
+        },
+        {
+          "action": "REVIEWED",
+          "actor": "0xc9b5c46f2ad9021496e5e389958b810d72db8bd1",
+          "at": 1792398558
+        },
+        {
+          "action": "FINALIZED_UNRESOLVED",
+          "actor": "0xc9b5c46f2ad9021496e5e389958b810d72db8bd1",
+          "at": 1792398867
+        },
+        {
+          "action": "REFUND_REQUESTED",
+          "actor": "0xc9b5c46f2ad9021496e5e389958b810d72db8bd1",
+          "at": 1792398906
+        }
+      ],
+      "id": "bj-approval-01",
+      "owner": "0xc9b5c46f2ad9021496e5e389958b810d72db8bd1",
+      "pr": 1,
+      "repository": "amzar1st/bountyjudge",
+      "requirements": [
+        "Implement normalize_handle(value) that strips surrounding whitespace and lowercases a string."
+      ],
+      "requirements_sha256": "9b40ee443619ddc7aba44c6c4bbfed006a0b05a593867523582529b76c8b3db9",
+      "response_deadline": 0,
+      "responses": [],
+      "result": {
+        "candidate_valid": true,
+        "checks": [],
+        "outcomes": [
+          "UNKNOWN"
+        ],
+        "reason": "assessment schema and literal quotations failed: UserError(message='Invalid literal quote')",
+        "sources": [
+          {
+            "sha256": "e0b6e04267c950e1bd580e93288979278dafc830a8a3b02f9d8e1dfb57965c0e",
+            "url": "https://api.github.com/repos/amzar1st/bountyjudge/pulls/1"
+          },
+          {
+            "sha256": "4ed842a2d4d29af52a255daefdb092c7b2ac69f7cb90711badb3823695918cb8",
+            "url": "https://raw.githubusercontent.com/amzar1st/BountyJudge/dc803457831d00ebca09cd8a6b4eeef42344aa88/fixtures/bj-approval-01.py"
+          },
+          {
+            "sha256": "3ae56ca42b97d73707d82d921b4b037ff9e8858303a80bcfabd95dca60b28b16",
+            "url": "https://api.github.com/repos/amzar1st/bountyjudge/pulls/1/files?per_page=100"
+          }
+        ],
+        "verdict": "NEEDS_REVIEW"
+      },
+      "review_deadline": 1792484912,
+      "reviews": [
+        {
+          "at": 1792398558,
+          "result": {
+            "candidate_valid": true,
+            "checks": [],
+            "outcomes": [
+              "UNKNOWN"
+            ],
+            "reason": "assessment schema and literal quotations failed: UserError(message='Invalid literal quote')",
+            "sources": [
+              {
+                "sha256": "e0b6e04267c950e1bd580e93288979278dafc830a8a3b02f9d8e1dfb57965c0e",
+                "url": "https://api.github.com/repos/amzar1st/bountyjudge/pulls/1"
+              },
+              {
+                "sha256": "4ed842a2d4d29af52a255daefdb092c7b2ac69f7cb90711badb3823695918cb8",
+                "url": "https://raw.githubusercontent.com/amzar1st/BountyJudge/dc803457831d00ebca09cd8a6b4eeef42344aa88/fixtures/bj-approval-01.py"
+              },
+              {
+                "sha256": "3ae56ca42b97d73707d82d921b4b037ff9e8858303a80bcfabd95dca60b28b16",
+                "url": "https://api.github.com/repos/amzar1st/bountyjudge/pulls/1/files?per_page=100"
+              }
+            ],
+            "verdict": "NEEDS_REVIEW"
+          }
+        }
+      ],
+      "reward_wei": "10000000000000000",
+      "state": "REFUND_REQUESTED",
+      "title": "Normalize contributor handles",
+      "transfer": {
+        "at": 1792398906,
+        "kind": "REFUND",
+        "recipient": "0xc9b5c46f2ad9021496e5e389958b810d72db8bd1",
+        "wei": "10000000000000000"
+      }
+    },
+    "bj-rejection-01": {
+      "challenge_deadline": 1792399295,
+      "challenged": false,
+      "challenges": [],
+      "claimant": "0xa6a5fd4d413c1a4aa2e8bd82cad9ef8997e105b2",
+      "deadline": 1792571224,
+      "escrow_wei": "0",
+      "head_sha": "f9a10952a4d936edbfb24fdd270d61c744867e28",
+      "history": [
+        {
+          "action": "CREATED_AND_FUNDED",
+          "actor": "0xc9b5c46f2ad9021496e5e389958b810d72db8bd1",
+          "at": 1792398425
+        },
+        {
+          "action": "PR_SUBMITTED",
+          "actor": "0xa6a5fd4d413c1a4aa2e8bd82cad9ef8997e105b2",
+          "at": 1792398955
+        },
+        {
+          "action": "REVIEWED",
+          "actor": "0xc9b5c46f2ad9021496e5e389958b810d72db8bd1",
+          "at": 1792398995
+        },
+        {
+          "action": "FINALIZED_REJECTED",
+          "actor": "0xc9b5c46f2ad9021496e5e389958b810d72db8bd1",
+          "at": 1792399303
+        },
+        {
+          "action": "REFUND_REQUESTED",
+          "actor": "0xc9b5c46f2ad9021496e5e389958b810d72db8bd1",
+          "at": 1792399342
+        }
+      ],
+      "id": "bj-rejection-01",
+      "owner": "0xc9b5c46f2ad9021496e5e389958b810d72db8bd1",
+      "pr": 3,
+      "repository": "amzar1st/bountyjudge",
+      "requirements": [
+        "Implement normalize_handle(value) that returns value.upper() without stripping whitespace."
+      ],
+      "requirements_sha256": "2b06d438cd686a523f7f6e044e47cfd5103d7ba90d878c3a2c88d55705911c54",
+      "response_deadline": 0,
+      "responses": [],
+      "result": {
+        "candidate_valid": true,
+        "checks": [
+          {
+            "outcome": "FAIL",
+            "quotes": [
+              {
+                "quote": "def normalize_handle(value: str) -> str:\n    return value.strip().lower()",
+                "source": 1
+              },
+              {
+                "quote": "+def normalize_handle(value: str) -> str:\\n+    return value.strip().lower()",
+                "source": 2
+              }
+            ],
+            "reason": "The implementation contradicts the requirement by stripping whitespace and converting to lowercase instead of returning value.upper() unchanged except for case."
+          }
+        ],
+        "outcomes": [
+          "FAIL"
+        ],
+        "reason": "Requirement assessment complete",
+        "sources": [
+          {
+            "sha256": "134ad1f17f5ec9f8e0f94c1808032d96d3edd836128369fd92f2910cdb4f4273",
+            "url": "https://api.github.com/repos/amzar1st/bountyjudge/pulls/3"
+          },
+          {
+            "sha256": "4ed842a2d4d29af52a255daefdb092c7b2ac69f7cb90711badb3823695918cb8",
+            "url": "https://raw.githubusercontent.com/amzar1st/BountyJudge/f9a10952a4d936edbfb24fdd270d61c744867e28/fixtures/bj-rejection-01.py"
+          },
+          {
+            "sha256": "ad97e4489b56fc8a807ee85ffd78235c08370f66f1a008d8790d36f29586cc14",
+            "url": "https://api.github.com/repos/amzar1st/bountyjudge/pulls/3/files?per_page=100"
+          }
+        ],
+        "verdict": "REJECTED"
+      },
+      "review_deadline": 1792485355,
+      "reviews": [
+        {
+          "at": 1792398995,
+          "result": {
+            "candidate_valid": true,
+            "checks": [
+              {
+                "outcome": "FAIL",
+                "quotes": [
+                  {
+                    "quote": "def normalize_handle(value: str) -> str:\n    return value.strip().lower()",
+                    "source": 1
+                  },
+                  {
+                    "quote": "+def normalize_handle(value: str) -> str:\\n+    return value.strip().lower()",
+                    "source": 2
+                  }
+                ],
+                "reason": "The implementation contradicts the requirement by stripping whitespace and converting to lowercase instead of returning value.upper() unchanged except for case."
+              }
+            ],
+            "outcomes": [
+              "FAIL"
+            ],
+            "reason": "Requirement assessment complete",
+            "sources": [
+              {
+                "sha256": "134ad1f17f5ec9f8e0f94c1808032d96d3edd836128369fd92f2910cdb4f4273",
+                "url": "https://api.github.com/repos/amzar1st/bountyjudge/pulls/3"
+              },
+              {
+                "sha256": "4ed842a2d4d29af52a255daefdb092c7b2ac69f7cb90711badb3823695918cb8",
+                "url": "https://raw.githubusercontent.com/amzar1st/BountyJudge/f9a10952a4d936edbfb24fdd270d61c744867e28/fixtures/bj-rejection-01.py"
+              },
+              {
+                "sha256": "ad97e4489b56fc8a807ee85ffd78235c08370f66f1a008d8790d36f29586cc14",
+                "url": "https://api.github.com/repos/amzar1st/bountyjudge/pulls/3/files?per_page=100"
+              }
+            ],
+            "verdict": "REJECTED"
+          }
+        }
+      ],
+      "reward_wei": "10000000000000000",
+      "state": "REFUND_REQUESTED",
+      "title": "Reject a contradicted requirement",
+      "transfer": {
+        "at": 1792399342,
+        "kind": "REFUND",
+        "recipient": "0xc9b5c46f2ad9021496e5e389958b810d72db8bd1",
+        "wei": "10000000000000000"
+      }
+    },
+    "bj-unknown-01": {
+      "challenge_deadline": 1792399403,
+      "challenged": false,
+      "challenges": [],
+      "claimant": "0xa6a5fd4d413c1a4aa2e8bd82cad9ef8997e105b2",
+      "deadline": 1792571262,
+      "escrow_wei": "0",
+      "head_sha": "1f1efa4e2f8674b4502ca09799ae5089e89cf45e",
+      "history": [
+        {
+          "action": "CREATED_AND_FUNDED",
+          "actor": "0xc9b5c46f2ad9021496e5e389958b810d72db8bd1",
+          "at": 1792398469
+        },
+        {
+          "action": "PR_SUBMITTED",
+          "actor": "0xa6a5fd4d413c1a4aa2e8bd82cad9ef8997e105b2",
+          "at": 1792399060
+        },
+        {
+          "action": "REVIEWED",
+          "actor": "0xc9b5c46f2ad9021496e5e389958b810d72db8bd1",
+          "at": 1792399103
+        },
+        {
+          "action": "FINALIZED_UNRESOLVED",
+          "actor": "0xc9b5c46f2ad9021496e5e389958b810d72db8bd1",
+          "at": 1792399412
+        },
+        {
+          "action": "REFUND_REQUESTED",
+          "actor": "0xc9b5c46f2ad9021496e5e389958b810d72db8bd1",
+          "at": 1792399451
+        }
+      ],
+      "id": "bj-unknown-01",
+      "owner": "0xc9b5c46f2ad9021496e5e389958b810d72db8bd1",
+      "pr": 4,
+      "repository": "amzar1st/bountyjudge",
+      "requirements": [
+        "Provide independently verified proof that normalize_handle was deployed and passed a live wallet integration test."
+      ],
+      "requirements_sha256": "d0795ee30d3b4fcbbed172ccb8de53b74435a521ea9a29ad5d930053a37d913d",
+      "response_deadline": 0,
+      "responses": [],
+      "result": {
+        "candidate_valid": true,
+        "checks": [
+          {
+            "outcome": "UNKNOWN",
+            "quotes": [],
+            "reason": "The PR contains the source code for normalize_handle, but there is no evidence of a deployment log, transaction hash, or test execution report confirming a live wallet integration test."
+          }
+        ],
+        "outcomes": [
+          "UNKNOWN"
+        ],
+        "reason": "Requirement assessment complete",
+        "sources": [
+          {
+            "sha256": "b9949398c04f195d6c2b1a71173f1d8f7576f44d70ebd5f75bc4d2cd70fc4611",
+            "url": "https://api.github.com/repos/amzar1st/bountyjudge/pulls/4"
+          },
+          {
+            "sha256": "4ed842a2d4d29af52a255daefdb092c7b2ac69f7cb90711badb3823695918cb8",
+            "url": "https://raw.githubusercontent.com/amzar1st/BountyJudge/1f1efa4e2f8674b4502ca09799ae5089e89cf45e/fixtures/bj-unknown-01.py"
+          },
+          {
+            "sha256": "b2f2b4f5a5143458617cf545b719856a2e1d8c00092d7b6b39752aed00f686a9",
+            "url": "https://api.github.com/repos/amzar1st/bountyjudge/pulls/4/files?per_page=100"
+          }
+        ],
+        "verdict": "NEEDS_REVIEW"
+      },
+      "review_deadline": 1792485460,
+      "reviews": [
+        {
+          "at": 1792399103,
+          "result": {
+            "candidate_valid": true,
+            "checks": [
+              {
+                "outcome": "UNKNOWN",
+                "quotes": [],
+                "reason": "The PR contains the source code for normalize_handle, but there is no evidence of a deployment log, transaction hash, or test execution report confirming a live wallet integration test."
+              }
+            ],
+            "outcomes": [
+              "UNKNOWN"
+            ],
+            "reason": "Requirement assessment complete",
+            "sources": [
+              {
+                "sha256": "b9949398c04f195d6c2b1a71173f1d8f7576f44d70ebd5f75bc4d2cd70fc4611",
+                "url": "https://api.github.com/repos/amzar1st/bountyjudge/pulls/4"
+              },
+              {
+                "sha256": "4ed842a2d4d29af52a255daefdb092c7b2ac69f7cb90711badb3823695918cb8",
+                "url": "https://raw.githubusercontent.com/amzar1st/BountyJudge/1f1efa4e2f8674b4502ca09799ae5089e89cf45e/fixtures/bj-unknown-01.py"
+              },
+              {
+                "sha256": "b2f2b4f5a5143458617cf545b719856a2e1d8c00092d7b6b39752aed00f686a9",
+                "url": "https://api.github.com/repos/amzar1st/bountyjudge/pulls/4/files?per_page=100"
+              }
+            ],
+            "verdict": "NEEDS_REVIEW"
+          }
+        }
+      ],
+      "reward_wei": "10000000000000000",
+      "state": "REFUND_REQUESTED",
+      "title": "Require unavailable runtime evidence",
+      "transfer": {
+        "at": 1792399451,
+        "kind": "REFUND",
+        "recipient": "0xc9b5c46f2ad9021496e5e389958b810d72db8bd1",
+        "wei": "10000000000000000"
+      }
+    },
+    "bj-direct-approval-02": {
+      "challenge_deadline": 1792399926,
+      "challenged": false,
+      "challenges": [],
+      "claimant": "0xa6a5fd4d413c1a4aa2e8bd82cad9ef8997e105b2",
+      "deadline": 1792572331,
+      "escrow_wei": "10000000000000000",
+      "head_sha": "63968d7d84a0f7ec33350fcc7741b860b2913587",
+      "history": [
+        {
+          "action": "CREATED_AND_FUNDED",
+          "actor": "0xc9b5c46f2ad9021496e5e389958b810d72db8bd1",
+          "at": 1792399536
+        },
+        {
+          "action": "PR_SUBMITTED",
+          "actor": "0xa6a5fd4d413c1a4aa2e8bd82cad9ef8997e105b2",
+          "at": 1792399582
+        },
+        {
+          "action": "REVIEWED",
+          "actor": "0xc9b5c46f2ad9021496e5e389958b810d72db8bd1",
+          "at": 1792399626
+        }
+      ],
+      "id": "bj-direct-approval-02",
+      "owner": "0xc9b5c46f2ad9021496e5e389958b810d72db8bd1",
+      "pr": 5,
+      "repository": "amzar1st/bountyjudge",
+      "requirements": [
+        "Implement normalize_handle(value) that strips surrounding whitespace and lowercases a string."
+      ],
+      "requirements_sha256": "9b40ee443619ddc7aba44c6c4bbfed006a0b05a593867523582529b76c8b3db9",
+      "response_deadline": 0,
+      "responses": [],
+      "result": {
+        "candidate_valid": true,
+        "checks": [
+          {
+            "outcome": "PASS",
+            "quotes": [
+              {
+                "quote": "def normalize_handle(value): return value.strip().lower()",
+                "source": 1
+              }
+            ],
+            "reason": "The implementation of normalize_handle strips whitespace using .strip() and lowercases the string using .lower()."
+          }
+        ],
+        "outcomes": [
+          "PASS"
+        ],
+        "reason": "Requirement assessment complete",
+        "sources": [
+          {
+            "sha256": "66b9d59e15ca713d852a87a24ab6b03573fecfdaa9179811900c6948c2d740fd",
+            "url": "https://api.github.com/repos/amzar1st/bountyjudge/pulls/5"
+          },
+          {
+            "sha256": "6a2d2d53437dc3317b17f47693ebbd6120225b56258f7e8c5800ff6757798920",
+            "url": "https://raw.githubusercontent.com/amzar1st/BountyJudge/63968d7d84a0f7ec33350fcc7741b860b2913587/fixtures/direct-normalizer.py"
+          },
+          {
+            "sha256": "0762980ea1b6a0123b5644099e21346877262cf452fe3b504234d4130445c004",
+            "url": "https://api.github.com/repos/amzar1st/bountyjudge/pulls/5/files?per_page=100"
+          }
+        ],
+        "verdict": "APPROVED"
+      },
+      "review_deadline": 1792485982,
+      "reviews": [
+        {
+          "at": 1792399626,
+          "result": {
+            "candidate_valid": true,
+            "checks": [
+              {
+                "outcome": "PASS",
+                "quotes": [
+                  {
+                    "quote": "def normalize_handle(value): return value.strip().lower()",
+                    "source": 1
+                  }
+                ],
+                "reason": "The implementation of normalize_handle strips whitespace using .strip() and lowercases the string using .lower()."
+              }
+            ],
+            "outcomes": [
+              "PASS"
+            ],
+            "reason": "Requirement assessment complete",
+            "sources": [
+              {
+                "sha256": "66b9d59e15ca713d852a87a24ab6b03573fecfdaa9179811900c6948c2d740fd",
+                "url": "https://api.github.com/repos/amzar1st/bountyjudge/pulls/5"
+              },
+              {
+                "sha256": "6a2d2d53437dc3317b17f47693ebbd6120225b56258f7e8c5800ff6757798920",
+                "url": "https://raw.githubusercontent.com/amzar1st/BountyJudge/63968d7d84a0f7ec33350fcc7741b860b2913587/fixtures/direct-normalizer.py"
+              },
+              {
+                "sha256": "0762980ea1b6a0123b5644099e21346877262cf452fe3b504234d4130445c004",
+                "url": "https://api.github.com/repos/amzar1st/bountyjudge/pulls/5/files?per_page=100"
+              }
+            ],
+            "verdict": "APPROVED"
+          }
+        }
+      ],
+      "reward_wei": "10000000000000000",
+      "state": "REVIEWED",
+      "title": "Normalize a handle with a minimal implementation",
+      "transfer": null
+    }
+  },
+  "startedAt": "2026-10-19T08:19:50.856Z",
+  "developerFunded": true,
+  "balanceChecks": {
+    "bj-dispute-01": {
+      "recipient": "0xA6a5fd4d413C1A4aa2e8Bd82cAD9EF8997e105b2",
+      "amountWei": "10000000000000000",
+      "before": {
+        "recipient": "0x25f273933db5700000",
+        "contract": "0x8e1bc9bf040000"
+      },
+      "samples": [
+        {
+          "at": "2026-10-19T08:32:30.169Z",
+          "recipient": "0x25f2971a3025310000",
+          "contract": "0x6a94d74f430000"
+        }
+      ],
+      "recipientCreditVerified": true,
+      "contractDebitVerified": true
+    },
+    "bj-approval-01": {
+      "recipient": "0xC9b5C46F2AD9021496e5E389958b810d72dB8Bd1",
+      "amountWei": "10000000000000000",
+      "before": {
+        "recipient": "0x1b193a8385b2440000",
+        "contract": "0x6a94d74f430000"
+      },
+      "samples": [
+        {
+          "at": "2026-10-19T08:35:46.706Z",
+          "recipient": "0x1b195e0a7822050000",
+          "contract": "0x470de4df820000"
+        }
+      ],
+      "recipientCreditVerified": true,
+      "contractDebitVerified": true
+    },
+    "bj-rejection-01": {
+      "recipient": "0xC9b5C46F2AD9021496e5E389958b810d72dB8Bd1",
+      "amountWei": "10000000000000000",
+      "before": {
+        "recipient": "0x1b195e0a7822050000",
+        "contract": "0x470de4df820000"
+      },
+      "samples": [
+        {
+          "at": "2026-10-19T08:42:59.185Z",
+          "recipient": "0x1b1981916a91c60000",
+          "contract": "0x2386f26fc10000"
+        }
+      ],
+      "recipientCreditVerified": true,
+      "contractDebitVerified": true
+    },
+    "bj-unknown-01": {
+      "recipient": "0xC9b5C46F2AD9021496e5E389958b810d72dB8Bd1",
+      "amountWei": "10000000000000000",
+      "before": {
+        "recipient": "0x1b1981916a91c60000",
+        "contract": "0x2386f26fc10000"
+      },
+      "samples": [
+        {
+          "at": "2026-10-19T08:44:48.689Z",
+          "recipient": "0x1b19a5185d01870000",
+          "contract": "0x0"
+        }
+      ],
+      "recipientCreditVerified": true,
+      "contractDebitVerified": true
+    }
+  }
+}

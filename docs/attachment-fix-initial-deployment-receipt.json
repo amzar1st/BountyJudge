@@ -1,0 +1,51 @@
+{
+  "status": 7,
+  "to_address": "0x107dedc67463973D3C8E725907F9c9e06aF5a8FE",
+  "votes": {
+    "0x7bf4Ea55363bbe73A4dd5b3900bf03c978A63b6e": "agree",
+    "0x892C437da9b9CA0b6017B6f046F58E3526B46ec6": "agree",
+    "0x8Ce1805d6970d54748dE7160b5b395dCC5c71F44": "agree",
+    "0x8a876C3F3a4783Bd123982bcBF3c672dc0239004": "idle",
+    "0xf29b6947ed298d139FC2655DB15D868C9AbB3091": "idle"
+  },
+  "executions": [
+    {
+      "mode": "leader",
+      "vote": null,
+      "execution_result": "SUCCESS",
+      "result": {
+        "status": "return",
+        "payload": {
+          "readable": "null"
+        }
+      },
+      "genvm_result": {
+        "stderr": "",
+        "stdout": "",
+        "raw_error": null,
+        "error_code": null,
+        "error_description": null
+      }
+    },
+    {
+      "mode": "validator",
+      "vote": "idle",
+      "execution_result": "ERROR",
+      "result": {
+        "status": "contract_error",
+        "payload": "idle"
+      },
+      "genvm_result": {
+        "stderr": "Validator execution cancelled after quorum",
+        "stdout": "",
+        "raw_error": {
+          "fatal": false,
+          "causes": [
+            "VALIDATOR_QUORUM_REACHED"
+          ]
+        },
+        "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+      }
+    }
+  ]
+}

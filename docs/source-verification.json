@@ -1,0 +1,9 @@
+{
+  "contract": "0x46987EFCfe8bC16202D77164E6b6cF618894Aabf",
+  "network": "Studionet",
+  "codeState": "accepted (legacy Studionet RPC); deployment finalized",
+  "rpcParameterStyle": "address string",
+  "localSha256": "00d68667c325b158397e1a625c5859072511e0151a6d4a8f33a23b0e31fabf5d",
+  "onChainSha256": "00d68667c325b158397e1a625c5859072511e0151a6d4a8f33a23b0e31fabf5d",
+  "checkedAt": "2026-10-19T08:44:11.931Z"
+}

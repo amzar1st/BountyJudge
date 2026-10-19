@@ -30,6 +30,24 @@ class Tests(unittest.TestCase):
     def test_escrow_immutable(self):
         b=self.get(); self.assertEqual(b['escrow_wei'],'100')
         with self.assertRaises(f.Error):self.c.create_bounty('demo','other','a/b','[]',now()+100)
+    def test_zero_reward_is_rejected(self):
+        f.message.value=0
+        with self.assertRaises(f.Error):self.c.create_bounty('zero','No funds','a/b',json.dumps(['A specific requirement']),now()+100)
+    def test_third_party_cannot_challenge(self):
+        self.submit();self.review();f.message.sender_address='0x'+'3'*40
+        with self.assertRaises(f.Error):self.c.challenge('demo','https://raw.githubusercontent.com/amzar1st/bountyjudge/'+SHA+'/app.js')
+    def test_expired_claim_is_rejected(self):
+        self.time(3600)
+        with self.assertRaises(f.Error):self.submit()
+    def test_escrow_is_separate_per_bounty(self):
+        f.message.value=250;self.c.create_bounty('other','Another task','a/b',json.dumps(['A specific requirement']),now()+100)
+        self.time(100);self.c.refund('other');self.assertEqual(f.transfers,[(OWNER,250)]);self.assertEqual(self.get()['escrow_wei'],'100')
+    def test_challenge_at_deadline_is_rejected(self):
+        self.submit();self.review();self.time(60)
+        with self.assertRaises(f.Error):self.c.challenge('demo','https://raw.githubusercontent.com/amzar1st/bountyjudge/'+SHA+'/app.js')
+    def test_approved_escrow_cannot_be_refunded(self):
+        self.submit();self.review();self.time(60);self.c.finalize('demo');f.message.sender_address=OWNER
+        with self.assertRaises(f.Error):self.c.refund('demo')
     def test_wallet_binding_required(self):
         self.submit(); self.assertEqual(self.get()['claimant'],DEV)
     def test_missing_binding_cannot_reserve(self):
@@ -61,7 +79,7 @@ class Tests(unittest.TestCase):
         with self.assertRaises(f.Error):self.c.review('demo')
         f.message.sender_address=DEV;self.c.respond('demo',u)
         with self.assertRaises(f.Error):self.c.respond('demo',u)
-        self.time(60);self.c.review('demo');self.c.finalize('demo');self.assertEqual(self.get()['state'],'UNRESOLVED')
+        self.time(60);self.review();self.c.finalize('demo');self.assertEqual(self.get()['state'],'ELIGIBLE');self.assertEqual(sum('error' in x for x in self.get()['result']['sources']),2)
         self.assertEqual(len(self.get()['reviews']),2)
     def test_challenge_url_restrictions(self):
         self.submit();self.review()
@@ -81,6 +99,9 @@ class Tests(unittest.TestCase):
     def test_invented_quote_fails(self):
         self.submit();f.prompts.append({'checks':[{'outcome':'PASS','reason':'guess','quotes':[{'source':1,'quote':'fabricated implementation'}]}]})
         self.c.review('demo');self.assertEqual(self.get()['result']['verdict'],'NEEDS_REVIEW')
+    def test_fenced_model_json(self):
+        self.submit();f.prompts.extend(['```json\n'+json.dumps({'checks':[{'outcome':'PASS','reason':'Code inspected','quotes':[{'source':1,'quote':'button.connect()'}]}]})+'\n```','```json\n{"valid":[true]}\n```'])
+        self.c.review('demo');self.assertEqual(self.get()['result']['verdict'],'APPROVED')
     def test_duplicate_pr(self):
         self.submit();f.message.sender_address=OWNER
         self.c.create_bounty('second','Second task','amzar1st/BountyJudge',json.dumps(['Implement a connect button']),now()+3600)

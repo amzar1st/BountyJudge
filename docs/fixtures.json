@@ -1,0 +1,28 @@
+{
+  "bj-approval-01": {
+    "number": 1,
+    "head": "dc803457831d00ebca09cd8a6b4eeef42344aa88",
+    "evidence": "https://raw.githubusercontent.com/amzar1st/bountyjudge/dc803457831d00ebca09cd8a6b4eeef42344aa88/fixtures/bj-approval-01.py"
+  },
+  "bj-dispute-01": {
+    "number": 2,
+    "head": "92b24fc15544657e766d56aad474101d4f622a54",
+    "evidence": "https://raw.githubusercontent.com/amzar1st/bountyjudge/92b24fc15544657e766d56aad474101d4f622a54/fixtures/missing-counter-evidence.txt",
+    "responseEvidence": "https://raw.githubusercontent.com/amzar1st/bountyjudge/92b24fc15544657e766d56aad474101d4f622a54/fixtures/bj-dispute-01.py"
+  },
+  "bj-rejection-01": {
+    "number": 3,
+    "head": "f9a10952a4d936edbfb24fdd270d61c744867e28",
+    "evidence": "https://raw.githubusercontent.com/amzar1st/bountyjudge/f9a10952a4d936edbfb24fdd270d61c744867e28/fixtures/bj-rejection-01.py"
+  },
+  "bj-unknown-01": {
+    "number": 4,
+    "head": "1f1efa4e2f8674b4502ca09799ae5089e89cf45e",
+    "evidence": "https://raw.githubusercontent.com/amzar1st/bountyjudge/1f1efa4e2f8674b4502ca09799ae5089e89cf45e/fixtures/bj-unknown-01.py"
+  },
+  "bj-direct-approval-02": {
+    "number": 5,
+    "head": "63968d7d84a0f7ec33350fcc7741b860b2913587",
+    "evidence": "https://raw.githubusercontent.com/amzar1st/bountyjudge/63968d7d84a0f7ec33350fcc7741b860b2913587/fixtures/direct-normalizer.py"
+  }
+}

@@ -12,8 +12,8 @@ const code=await fs.readFile('contracts/bountyjudge.py','utf8'),sourceSha256=cre
 let record;try{record=JSON.parse(await fs.readFile('docs/deployment.json','utf8'));}catch(e){if(e.code!=='ENOENT')throw e;}
 if(record&&record.sourceSha256!==sourceSha256)throw Error('Source changed since deployment. Inspect existing deployment before resubmitting.');
 if(!record){await client.request({method:'sim_fundAccount',params:[account.address,1e20]});
- const hash=await client.deployContract({code,args:[60],leaderOnly:false});
- record={network:'Studionet',chainId:61999,rpc:'https://studio.genlayer.com/api',deploymentTx:hash,sourceSha256,deployer:account.address,challengeSeconds:60,accountOrigin:'Generated SDK test account; not Studio built-in or MetaMask',submittedAt:new Date().toISOString()};
+ const hash=await client.deployContract({code,args:[300],leaderOnly:false});
+ record={network:'Studionet',chainId:61999,rpc:'https://studio.genlayer.com/api',deploymentTx:hash,sourceSha256,deployer:account.address,challengeSeconds:300,accountOrigin:'Generated SDK test account; not Studio built-in or MetaMask',submittedAt:new Date().toISOString()};
  await fs.writeFile('docs/deployment.json',JSON.stringify(record,null,2));console.log('Submitted',hash);}
 const receipt=await client.waitForTransactionReceipt({hash:record.deploymentTx,status:'FINALIZED',interval:3000,retries:100});
 const leader=receipt.consensus_data?.leader_receipt;

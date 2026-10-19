@@ -1,0 +1,20 @@
+{
+  "network": "Studionet",
+  "chainId": 61999,
+  "rpc": "https://studio.genlayer.com/api",
+  "deploymentTx": "0x659c809b1f7712806b8da6db44ab1b00a7f05eb6eb26c0c8ccf9d3846b4a50e6",
+  "sourceSha256": "b1ff2ad58d6424a45d8794094bedc6b86ddc191e26cbd9c39e5885d771fd244e",
+  "deployer": "0xC9b5C46F2AD9021496e5E389958b810d72dB8Bd1",
+  "challengeSeconds": 60,
+  "accountOrigin": "Generated SDK test account; not Studio built-in or MetaMask",
+  "submittedAt": "2026-10-19T08:05:08.602Z",
+  "address": "0x52e9e821E997c3fF195C226d57A1eCb14a58E1b4",
+  "config": {
+    "version": "0.1.0",
+    "challenge_seconds": 60,
+    "max_files": 6,
+    "escrow": "native GEN",
+    "network_note": "Studio GEN is simulated test currency; transfer emission does not confirm recipient credit"
+  },
+  "finalizedAt": "2026-10-19T08:05:43.862Z"
+}

@@ -1,0 +1,520 @@
+{
+  "network": "Studionet",
+  "contract": "0xeecf3bCEF4a22Bad64130702ab5dbaEfa734E402",
+  "owner": "0xC9b5C46F2AD9021496e5E389958b810d72dB8Bd1",
+  "developer": "0xA6a5fd4d413C1A4aa2e8Bd82cAD9EF8997e105b2",
+  "origin": "SDK generated test accounts; browser signing not verified",
+  "transactions": [
+    {
+      "label": "bj-approval-01:create",
+      "hash": "0xc3bd7b0a56a8dfd9346deabbbd825194291be88a56fa3cd2c08324b3c00e0d53",
+      "method": "create_bounty",
+      "args": [
+        "bj-approval-01",
+        "Normalize contributor handles",
+        "amzar1st/BountyJudge",
+        "[\"Implement normalize_handle(value) that strips surrounding whitespace and lowercases a string.\"]",
+        1792570247
+      ],
+      "signer": "0xC9b5C46F2AD9021496e5E389958b810d72dB8Bd1",
+      "value": "10000000000000000",
+      "receipt": {
+        "status": 7,
+        "executions": [
+          {
+            "mode": "leader",
+            "vote": null,
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          },
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x17ac0CaefB18205c737e64ee582c9245A28ca1f9": "idle",
+          "0x2FcBC452425f2F1e102c5c04b4331fcB46ee1c00": "agree",
+          "0x7bf4Ea55363bbe73A4dd5b3900bf03c978A63b6e": "idle",
+          "0xad7d13f269CeAd4379E64a1A3a0803a827e70B43": "agree",
+          "0xb0925568bFbCF00aADBcA053E6D0E1628ff3d530": "agree"
+        }
+      },
+      "success": true
+    },
+    {
+      "label": "bj-dispute-01:create",
+      "hash": "0x6137e377be3e9b810c99ee86506a3007f5cea0fb7c5c5d53a506a6b3e38ef88a",
+      "method": "create_bounty",
+      "args": [
+        "bj-dispute-01",
+        "Review a challenged implementation",
+        "amzar1st/BountyJudge",
+        "[\"Implement normalize_handle(value) that strips surrounding whitespace and lowercases a string.\"]",
+        1792570282
+      ],
+      "signer": "0xC9b5C46F2AD9021496e5E389958b810d72dB8Bd1",
+      "value": "10000000000000000",
+      "receipt": {
+        "status": 7,
+        "executions": [
+          {
+            "mode": "leader",
+            "vote": null,
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          },
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x1dEcE6A694520b1d3a2e24b9f28500858C756BDb": "agree",
+          "0x6a4179A851B3747A458baD2f089AB2EeFE0eBbAb": "agree",
+          "0x892C437da9b9CA0b6017B6f046F58E3526B46ec6": "agree",
+          "0xb0925568bFbCF00aADBcA053E6D0E1628ff3d530": "agree",
+          "0xe7eEe8a1c1690b0322d795B80A76ab2Cd1a0eAFd": "agree"
+        }
+      },
+      "success": true
+    },
+    {
+      "label": "bj-rejection-01:create",
+      "hash": "0xd8ae4d41022b9b092df0baacdeb89be3ef89c355a9f9ba1b5d60fc90acc9be22",
+      "method": "create_bounty",
+      "args": [
+        "bj-rejection-01",
+        "Reject a contradicted requirement",
+        "amzar1st/BountyJudge",
+        "[\"Implement normalize_handle(value) that returns value.upper() without stripping whitespace.\"]",
+        1792570324
+      ],
+      "signer": "0xC9b5C46F2AD9021496e5E389958b810d72dB8Bd1",
+      "value": "10000000000000000",
+      "receipt": {
+        "status": 7,
+        "executions": [
+          {
+            "mode": "leader",
+            "vote": null,
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          },
+          {
+            "mode": "validator",
+            "vote": "idle",
+            "execution_result": "ERROR",
+            "genvm_result": {
+              "stderr": "Validator execution cancelled after quorum",
+              "stdout": "",
+              "raw_error": {
+                "fatal": false,
+                "causes": [
+                  "VALIDATOR_QUORUM_REACHED"
+                ]
+              },
+              "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+            },
+            "result": {
+              "status": "contract_error",
+              "payload": "idle"
+            }
+          }
+        ],
+        "votes": {
+          "0x17ac0CaefB18205c737e64ee582c9245A28ca1f9": "idle",
+          "0x6a4179A851B3747A458baD2f089AB2EeFE0eBbAb": "agree",
+          "0x8a876C3F3a4783Bd123982bcBF3c672dc0239004": "agree",
+          "0xa21bc502E3578E4b3039be8c59a257198f7c3f19": "agree",
+          "0xf29b6947ed298d139FC2655DB15D868C9AbB3091": "idle"
+        }
+      },
+      "success": true
+    },
+    {
+      "label": "bj-unknown-01:create",
+      "hash": "0xe36cfd6e40190293d58d6561d65820e7ae7d379e72de6628a0a3a8506637563e",
+      "method": "create_bounty",
+      "args": [
+        "bj-unknown-01",
+        "Require unavailable runtime evidence",
+        "amzar1st/BountyJudge",
+        "[\"Provide independently verified proof that normalize_handle was deployed and passed a live wallet integration test.\"]",
+        1792570365
+      ],
+      "signer": "0xC9b5C46F2AD9021496e5E389958b810d72dB8Bd1",
+      "value": "10000000000000000",
+      "receipt": {
+        "status": 7,
+        "executions": [
+          {
+            "mode": "leader",
+            "vote": null,
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          },
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x1dEcE6A694520b1d3a2e24b9f28500858C756BDb": "agree",
+          "0x40533175AfBbAee2c030F88259Afb5aEDbCF0E05": "agree",
+          "0x5Bbbd7cdD63c0ba7f088038Cb049bDDAbE4F6fd1": "agree",
+          "0x8a876C3F3a4783Bd123982bcBF3c672dc0239004": "agree",
+          "0xA712cB25a4002666FA9D09477251f238dD9e06b3": "agree"
+        }
+      },
+      "success": true
+    },
+    {
+      "label": "bj-dispute-01:submit",
+      "hash": "0x6b2a5aab4b0242d26f6cffba6f0273a6646797e4e461e683e4dfaf6daabaab02",
+      "method": "submit_pr",
+      "args": [
+        "bj-dispute-01",
+        2,
+        "92b24fc15544657e766d56aad474101d4f622a54"
+      ],
+      "signer": "0xA6a5fd4d413C1A4aa2e8Bd82cAD9EF8997e105b2",
+      "value": "0",
+      "receipt": {
+        "status": 7,
+        "executions": [
+          {
+            "mode": "leader",
+            "vote": null,
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          },
+          {
+            "mode": "validator",
+            "vote": "agree",
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x17ac0CaefB18205c737e64ee582c9245A28ca1f9": "agree",
+          "0x5Bbbd7cdD63c0ba7f088038Cb049bDDAbE4F6fd1": "idle",
+          "0xA712cB25a4002666FA9D09477251f238dD9e06b3": "idle",
+          "0xb0925568bFbCF00aADBcA053E6D0E1628ff3d530": "agree",
+          "0xf29b6947ed298d139FC2655DB15D868C9AbB3091": "agree"
+        }
+      },
+      "success": true
+    },
+    {
+      "label": "bj-dispute-01:review",
+      "hash": "0x368e4725d8bf9449b22e3f26466f5396069f998b9ede9c199a3e8be76f53604a",
+      "method": "review",
+      "args": [
+        "bj-dispute-01"
+      ],
+      "signer": "0xC9b5C46F2AD9021496e5E389958b810d72dB8Bd1",
+      "value": "0",
+      "receipt": {
+        "status": 7,
+        "executions": [
+          {
+            "mode": "leader",
+            "vote": null,
+            "execution_result": "SUCCESS",
+            "genvm_result": {
+              "stderr": "",
+              "stdout": "",
+              "raw_error": null,
+              "error_code": null,
+              "error_description": null
+            },
+            "result": {
+              "status": "return",
+              "payload": {
+                "readable": "null"
+              }
+            }
+          },
+          {
+            "mode": "validator",
+            "vote": "idle",
+            "execution_result": "ERROR",
+            "genvm_result": {
+              "stderr": "Validator execution cancelled after quorum",
+              "stdout": "",
+              "raw_error": {
+                "fatal": false,
+                "causes": [
+                  "VALIDATOR_QUORUM_REACHED"
+                ]
+              },
+              "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+            },
+            "result": {
+              "status": "contract_error",
+              "payload": "idle"
+            }
+          }
+        ],
+        "votes": {
+          "0x0B50B270Eba5D9B780272C4Cf4720260177e761D": "agree",
+          "0x7bf4Ea55363bbe73A4dd5b3900bf03c978A63b6e": "idle",
+          "0x892C437da9b9CA0b6017B6f046F58E3526B46ec6": "idle",
+          "0xa21bc502E3578E4b3039be8c59a257198f7c3f19": "agree",
+          "0xf1C7551292319EE334e2D8A24eAC108Bd4C63b21": "agree"
+        }
+      },
+      "success": true
+    }
+  ],
+  "cases": {
+    "bj-approval-01": {
+      "challenge_deadline": 0,
+      "challenged": false,
+      "challenges": [],
+      "claimant": "",
+      "deadline": 1792570247,
+      "escrow_wei": "10000000000000000",
+      "head_sha": "",
+      "history": [
+        {
+          "action": "CREATED_AND_FUNDED",
+          "actor": "0xc9b5c46f2ad9021496e5e389958b810d72db8bd1",
+          "at": 1792397447
+        }
+      ],
+      "id": "bj-approval-01",
+      "owner": "0xc9b5c46f2ad9021496e5e389958b810d72db8bd1",
+      "pr": 0,
+      "repository": "amzar1st/bountyjudge",
+      "requirements": [
+        "Implement normalize_handle(value) that strips surrounding whitespace and lowercases a string."
+      ],
+      "requirements_sha256": "9b40ee443619ddc7aba44c6c4bbfed006a0b05a593867523582529b76c8b3db9",
+      "response_deadline": 0,
+      "responses": [],
+      "result": null,
+      "review_deadline": 0,
+      "reviews": [],
+      "reward_wei": "10000000000000000",
+      "state": "OPEN",
+      "title": "Normalize contributor handles",
+      "transfer": null
+    },
+    "bj-dispute-01": {
+      "challenge_deadline": 0,
+      "challenged": false,
+      "challenges": [],
+      "claimant": "",
+      "deadline": 1792570282,
+      "escrow_wei": "10000000000000000",
+      "head_sha": "",
+      "history": [
+        {
+          "action": "CREATED_AND_FUNDED",
+          "actor": "0xc9b5c46f2ad9021496e5e389958b810d72db8bd1",
+          "at": 1792397482
+        }
+      ],
+      "id": "bj-dispute-01",
+      "owner": "0xc9b5c46f2ad9021496e5e389958b810d72db8bd1",
+      "pr": 0,
+      "repository": "amzar1st/bountyjudge",
+      "requirements": [
+        "Implement normalize_handle(value) that strips surrounding whitespace and lowercases a string."
+      ],
+      "requirements_sha256": "9b40ee443619ddc7aba44c6c4bbfed006a0b05a593867523582529b76c8b3db9",
+      "response_deadline": 0,
+      "responses": [],
+      "result": null,
+      "review_deadline": 0,
+      "reviews": [],
+      "reward_wei": "10000000000000000",
+      "state": "OPEN",
+      "title": "Review a challenged implementation",
+      "transfer": null
+    },
+    "bj-rejection-01": {
+      "challenge_deadline": 0,
+      "challenged": false,
+      "challenges": [],
+      "claimant": "",
+      "deadline": 1792570324,
+      "escrow_wei": "10000000000000000",
+      "head_sha": "",
+      "history": [
+        {
+          "action": "CREATED_AND_FUNDED",
+          "actor": "0xc9b5c46f2ad9021496e5e389958b810d72db8bd1",
+          "at": 1792397524
+        }
+      ],
+      "id": "bj-rejection-01",
+      "owner": "0xc9b5c46f2ad9021496e5e389958b810d72db8bd1",
+      "pr": 0,
+      "repository": "amzar1st/bountyjudge",
+      "requirements": [
+        "Implement normalize_handle(value) that returns value.upper() without stripping whitespace."
+      ],
+      "requirements_sha256": "2b06d438cd686a523f7f6e044e47cfd5103d7ba90d878c3a2c88d55705911c54",
+      "response_deadline": 0,
+      "responses": [],
+      "result": null,
+      "review_deadline": 0,
+      "reviews": [],
+      "reward_wei": "10000000000000000",
+      "state": "OPEN",
+      "title": "Reject a contradicted requirement",
+      "transfer": null
+    },
+    "bj-unknown-01": {
+      "challenge_deadline": 0,
+      "challenged": false,
+      "challenges": [],
+      "claimant": "",
+      "deadline": 1792570365,
+      "escrow_wei": "10000000000000000",
+      "head_sha": "",
+      "history": [
+        {
+          "action": "CREATED_AND_FUNDED",
+          "actor": "0xc9b5c46f2ad9021496e5e389958b810d72db8bd1",
+          "at": 1792397565
+        }
+      ],
+      "id": "bj-unknown-01",
+      "owner": "0xc9b5c46f2ad9021496e5e389958b810d72db8bd1",
+      "pr": 0,
+      "repository": "amzar1st/bountyjudge",
+      "requirements": [
+        "Provide independently verified proof that normalize_handle was deployed and passed a live wallet integration test."
+      ],
+      "requirements_sha256": "d0795ee30d3b4fcbbed172ccb8de53b74435a521ea9a29ad5d930053a37d913d",
+      "response_deadline": 0,
+      "responses": [],
+      "result": null,
+      "review_deadline": 0,
+      "reviews": [],
+      "reward_wei": "10000000000000000",
+      "state": "OPEN",
+      "title": "Require unavailable runtime evidence",
+      "transfer": null
+    }
+  },
+  "startedAt": "2026-10-19T08:10:39.976Z"
+}
