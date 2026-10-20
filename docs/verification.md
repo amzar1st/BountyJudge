@@ -1,5 +1,18 @@
 # Verification record
 
+## Follow-up checked 2026-10-20
+
+- Hosting access is now **public**; an anonymous HTTP request returned 200.
+- All 40 automated checks and the production build passed again.
+- The deployed contract was imported through the real GenLayer Studio browser UI. Its built-in account `0xDaF21E798c054D998f2df528fAEA1Dc5D806FB90` was funded with simulated GEN.
+- In Normal (Full Consensus) mode, with Simulation Mode unchecked, that account created `bj-studio-wallet-01` with 1 test GEN and requested its expired-owner refund. Both transactions finalized successfully.
+- A Studio read displayed the owner and `REFUND_REQUESTED` history. Independent RPC checks observed account balance 9 GEN before refund, 10 GEN afterward, and zero contract balance. See [Studio receipts and balance evidence](studio-wallet-proof.json) and [browser screenshot](studio-wallet-20261020.jpg). This sixth bounty is separate from the five semantic-review cases below.
+- This verifies Studio built-in account writes and reads. It does **not** verify MetaMask or signing through the hosted frontend.
+- Hosted frontend browser interaction/layout QA remains unverified: managed Sites requires the `control-browser` skill, which is unavailable in this session. The workflow prohibits installing a replacement browser or improvising a preview path. No mock-provider check is presented as actual browser QA.
+- Studio rejected fractional `Value (GEN)` before submission; integer 1 GEN succeeded. A refund-click transport failure was inspected before retrying; no transaction or state change had been submitted by that failed attempt.
+
+## Historical verification checked 2026-10-19
+
 Checked: 2026-10-19T08:55:43.029Z. This is a **Studionet development demonstration**, not a production financial deployment.
 
 ## What is verified
@@ -36,10 +49,10 @@ Each transfer was 0.01 test GEN. `live-audit.json` summarizes the independently 
 
 ## What remains unverified
 
-- **Actual MetaMask / Studio built-in wallet browser flow:** browser automation timed out twice opening Studio. Live writes used generated SDK test accounts, not the requested Studio built-in account. Provider mocks are not a browser-wallet test.
+- **At the historical check:** Studio browser automation timed out twice; the original five cases used SDK accounts. The Studio built-in account check is now documented above. MetaMask and hosted-frontend signing remain unverified.
 - **Browser layout and interaction QA:** not completed because browser automation was unavailable.
 - **Production-value escrow / other networks:** not verified. Studio GEN balances are simulated. Failed external-message delivery has no automatic retry in this version.
 
-The hosted site is deployed at [BountyJudge](https://bountyjudge.tinymule33.chatgpt.site) with owner-private access. CORS OPTIONS and POST checks from that exact origin succeeded and returned chain ID `0xf22f`; that checks RPC configuration, not a signed browser transaction.
+The hosted site is deployed at [BountyJudge](https://bountyjudge.tinymule33.chatgpt.site) with public access (changed 2026-10-20). CORS OPTIONS and POST checks from that exact origin succeeded and returned chain ID `0xf22f`; that checks RPC configuration, not a signed browser transaction.
 
 The project should not be described as fully verified or perfect while browser checks remain outstanding. Retired deployment records are preserved for audit; use `deployment.json`, `source-verification.json`, `live-proof.json` and `live-audit.json` for the current deployment.
